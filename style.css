@@ -152,12 +152,12 @@ header {
 h2.NoTime {
   font-family: 'NoTime', cursive;
   color: black;
-  font-size: 35px
+  font-size: 35px;
 }
 h1.SomeTWild {
   font-family: 'SomeTWild', cursive;
   color: black;
-  font-size: 35px
+  font-size: 48px;
 }
 /* Menu and button Toggles */
 .menu-holder {
