@@ -1,4 +1,4 @@
-/* Body styles */
+/* font styles */
 @font-face{
   font-family: 'AktivGrotesk';
   src: url('/fonts/AktivGrotesk-Regular.ttf') format('truetype'),
@@ -6,6 +6,14 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Bfont';
+  src: url('/fonts/Bfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* body styles */
 body {
   font-family: 'AktivGrotesk', sans-serif;
   background-color: #8DC4E1;
@@ -125,7 +133,6 @@ header {
   min-height: 200px;
   text-align: center;
 }
-
 .section p {
   color: black;
   display: inline-block;
@@ -135,20 +142,18 @@ header {
   font-size: 28px;
   text-align: left;
 }
-
 .section h2 {
   color: black;
+  font-family: 'AktivGrotesk-Medium', sans-serif;
+}
+h2.Bfont {
+  font-family: 'Bfont', cursive;
 }
 
 /* Menu and button Toggles */
 .menu-holder {
   position: relative;
 }
-
-.menu-toggle, .close-btn, .menu-btn {
-  cursor: pointer;
-}
-
 .menu-toggle {
   display: flex;
   flex-direction: column;
@@ -177,7 +182,9 @@ header {
 .menu-toggle.active + .close-btn {
   display: block;
 }
-
+.menu-toggle, .close-btn, .menu-btn {
+  cursor: pointer;
+}
 .menu-holder.active .close-btn,
 .menu-holder.active .menu-toggle {
   display: block;
