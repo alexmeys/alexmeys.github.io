@@ -103,6 +103,7 @@ header {
 .overlay-menu li:nth-child(4) { bottom: 25%; right: 35%; }
 
 .overlay-menu a {
+  font-family: 'PWChalk', cursive;
   color: #000;
   text-decoration: none;
   display: block;
