@@ -31,3 +31,28 @@ links.forEach(function(link) {
     }, delay);
   });
 });
+
+var menuToggle = document.querySelector('.menu-toggle');
+var closeBtn = document.querySelector('.close-btn');
+var overlayMenu = document.querySelector('.overlay-menu');
+
+menuToggle.addEventListener('click', function() {
+  overlayMenu.style.display = 'block';
+  menuToggle.classList.add('active');
+  closeBtn.classList.add('active');
+});
+
+closeBtn.addEventListener('click', function() {
+  overlayMenu.style.display = 'none';
+  menuToggle.classList.remove('active');
+  closeBtn.classList.remove('active');
+});
+
+// Add event listener to close the overlay when clicking outside the menu
+overlayMenu.addEventListener('click', function(event) {
+  if (event.target === overlayMenu) {
+    overlayMenu.style.display = 'none';
+    menuToggle.classList.remove('active');
+    closeBtn.classList.remove('active');
+  }
+});
