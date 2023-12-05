@@ -142,12 +142,10 @@ header {
   font-size: 28px;
   text-align: left;
 }
-.section h2 {
-  color: black;
-  font-family: 'AktivGrotesk-Medium', sans-serif;
-}
 h2.Bfont {
   font-family: 'Bfont', cursive;
+  color: black;
+  font-size: 35px
 }
 
 /* Menu and button Toggles */
