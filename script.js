@@ -51,3 +51,21 @@ links.forEach(function (link) {
     }, delay);
   });
 });
+
+// Function to scroll to the top of the page smoothly
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Show/hide scroll-to-top button based on scroll position
+window.addEventListener('scroll', function() {
+  var scrollButton = document.querySelector('.scroll-to-top');
+  if (window.scrollY > 300) {
+    scrollButton.classList.add('active');
+  } else {
+    scrollButton.classList.remove('active');
+  }
+});
