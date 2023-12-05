@@ -1,3 +1,4 @@
+/*color : #3D3C3D; -> kleur voor rand tekst*/
 /* font styles */
 @font-face{
   font-family: 'AktivGrotesk';
@@ -12,6 +13,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'SomeTWild';
+  src: url('/fonts/somethingwild-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* body styles */
 body {
@@ -22,7 +29,6 @@ body {
 }
 .logo {
   font-size: 24px;
-  /*color : #3D3C3D; -> kleur voor rand tekst*/
 }
 
 /* Navigation styles */
@@ -103,7 +109,7 @@ header {
 .overlay-menu li:nth-child(4) { bottom: 25%; right: 35%; }
 
 .overlay-menu a {
-  font-family: 'NoTime', cursive;
+  font-family: 'SomeTWild', cursive;
   color: #000;
   text-decoration: none;
   display: block;
@@ -148,7 +154,11 @@ h2.NoTime {
   color: black;
   font-size: 35px
 }
-
+h1.SomeTWild {
+  font-family: 'SomeTWild', cursive;
+  color: black;
+  font-size: 35px
+}
 /* Menu and button Toggles */
 .menu-holder {
   position: relative;
