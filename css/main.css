@@ -22,7 +22,7 @@
 /* body styles */
 body {
   font-family: 'AktivGrotesk', sans-serif;
-  background-color: #000;
+  background-color: #1a1a1c;
   margin: 0;
   padding: 0;
 }
@@ -43,7 +43,12 @@ body {
   border-radius: 2px;
   transition: transform 0.3s ease;
 }
-
+.LHomeImg {
+  width: 350px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
 .nav {
   display: none;
 }
@@ -76,7 +81,6 @@ header {
   align-items: center;
   padding: 10px 20px;
 }
-
 /* Section styles */
 .section {
   padding: 20px;
@@ -93,7 +97,7 @@ header {
   color: #fff;
   display: inline-block;
   white-space: normal; 
-  max-width: 600px; 
+  width: calc(90vw); 
   overflow: hidden;
   font-size: 28px;
   text-align: left;
@@ -102,6 +106,7 @@ h2.NoTime {
   font-family: 'NoTime', cursive;
   color: #fff;
   font-size: 35px;
+  padding-top: 60px;
 }
 h1.SomeTWild {
   font-family: 'SomeTWild', cursive;
@@ -113,7 +118,7 @@ h1.SomeTWild {
 /* First Section */
 .first-section {
   min-height: 16.67vh;
-  /* Other styles as needed */
+  
 }
 
 /* Additional Sections in One Big Frame */
@@ -138,9 +143,8 @@ h1.SomeTWild {
   text-align: center;
   color: #174C67;
 }
-
-/* Adjust heights of individual sections */
-#about { height: 16.67%; } /* Each section occupies 1/6th of the total height */
+/* scherm gebruiker per sector*/
+#about { height: 16.67%; }
 #career { height: 16.67%; }
 #skills { height: 16.67%; }
 #certs { height: 16.67%; }
