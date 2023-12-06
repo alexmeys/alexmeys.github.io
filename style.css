@@ -142,12 +142,18 @@ header {
   padding: 20px;
   min-height: 200px;
   text-align: center;
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .section p {
   color: #3D3C3D;
   display: inline-block;
   white-space: normal; 
-  max-width: 500px; 
+  max-width: 600px; 
   overflow: hidden;
   font-size: 28px;
   text-align: left;
@@ -259,17 +265,35 @@ h1.SomeTWild {
 .scroll-to-top.active {
   display: block;
 }
+/* First Section */
+.first-section {
+  min-height: 1003px;
+  /* Other styles as needed */
+}
 
-/* Sectie Career*/
-.career-section {
+/* Additional Sections in One Big Frame */
+.additional-sections {
+  min-height: 6003px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer */
+.footer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  color: #3D3C3D;
+  font-family: 'AktivGrotesk', sans-serif;
 }
-.left-text, .right-text {
-  display: inline-block;
-  width: 48%; /* Adjust the width as needed */
-  vertical-align: top;
-  text-align: left; /* or right, depending on the text */
-  box-sizing: border-box;
-  padding: 0 1%; /* Add some padding for better spacing */
+
+.footer-column {
+  width: 30%;
 }
+
+/* Adjust heights of individual sections */
+#about { height: 16.67%; } /* Each section occupies 1/6th of the total height */
+#career { height: 16.67%; }
+#skills { height: 16.67%; }
+#certs { height: 16.67%; }
+#contact { height: 16.67%; }
