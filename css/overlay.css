@@ -1,0 +1,61 @@
+/* Overlay menu styles */
+.overlay-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.98);
+  z-index: 1000;
+  overflow-y: auto;
+  list-style: none;
+  padding-top: 50;
+  margin: 0;
+  box-sizing: border-box;
+}
+.overlay-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  padding-top: 20px;
+}
+.overlay-menu .menu-toggle,
+.overlay-menu li {
+  position: left;
+  padding-left: 50px;
+  text-align: center;
+  font-size: 48px;
+}
+
+.overlay-menu a {
+  font-family: 'SomeTWild', cursive;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  line-height: 16.67vh;
+}
+
+.overlay-menu.active {
+  display: block;
+}
+
+.overlay-menu .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1200;
+}
+
+.overlay-menu.active .close-btn {
+  display: block;
+}

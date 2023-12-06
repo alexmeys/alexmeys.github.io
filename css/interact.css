@@ -1,0 +1,97 @@
+/* Menu and button Toggles */
+.download-btn {
+  background-color: #174C67;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.menu-holder {
+  position: relative;
+}
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 30px;
+  padding: 5px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1200;
+  color: #174C67;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.menu-toggle.active + .close-btn {
+  display: block;
+}
+.menu-toggle, .close-btn, .menu-btn {
+  cursor: pointer;
+}
+.menu-holder.active .close-btn,
+.menu-holder.active .menu-toggle {
+  display: block;
+}
+
+.menu-holder.active .menu-toggle {
+  display: none;
+}
+
+/* Button closes*/
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1200; 
+  display: none;
+}
+
+.close-btn:before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.close-btn:after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Top scrolling arrow*/
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #174C67;
+  color: #fff;
+  border: 1px;
+  border-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  line-height: 5px;
+  z-index: 1000;
+}
+
+.scroll-to-top.active {
+  display: block;
+}
