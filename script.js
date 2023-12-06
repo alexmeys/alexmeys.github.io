@@ -3,52 +3,54 @@ function toggleMenu() {
   nav.classList.toggle('active');
 }
 
-// Variable -> instellen
 var menuToggle = document.querySelector('.menu-toggle');
 var closeBtn = document.querySelector('.close-btn');
 var overlayMenu = document.querySelector('.overlay-menu');
 
-// Overlay Menu weergeven
+function toggleOverlayMenu() {
+  overlayMenu.style.display === 'block' ? hideOverlayMenu() : showOverlayMenu();
+}
+
 function showOverlayMenu() {
   overlayMenu.style.display = 'block';
   menuToggle.classList.add('active');
   closeBtn.classList.add('active');
+  document.body.style.overflow = 'hidden'; // Disable body scroll
 }
 
-// Overlay Menu verbergen
 function hideOverlayMenu() {
   overlayMenu.style.display = 'none';
   menuToggle.classList.remove('active');
   closeBtn.classList.remove('active');
+  document.body.style.overflow = ''; // Enable body scroll
 }
 
-// Event acties
-menuToggle.addEventListener('click', showOverlayMenu);
+menuToggle.addEventListener('click', toggleOverlayMenu);
 closeBtn.addEventListener('click', hideOverlayMenu);
 
-// Sluiten hamburger menu buiten x
 overlayMenu.addEventListener('click', function (event) {
   if (event.target === overlayMenu) {
     hideOverlayMenu();
   }
 });
 
-// Smooth scrolling for anchor links
-var links = document.querySelectorAll('a[href^="#"]');
 
-links.forEach(function (link) {
+// Smooth scrolling for anchor links
+var overlayLinks = document.querySelectorAll('.overlay-menu a[href^="#"]');
+
+overlayLinks.forEach(function (link) {
   link.addEventListener('click', function (event) {
     event.preventDefault();
-    var target = document.querySelector(this.getAttribute('href'));
-    var offset = target.offsetTop;
-    var delay = 1000; /*1 second delay op scrollen (smooth)*/
-    window.scrollTo({
-      top: offset,
-      behavior: 'smooth'
-    });
-    setTimeout(function () {
-      target.focus();
-    }, delay);
+    var targetId = this.getAttribute('href').substring(1);
+    var targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      var offset = targetSection.offsetTop;
+      window.scrollTo({
+        top: offset,
+        behavior: 'smooth'
+      });
+    }
+    hideOverlayMenu();
   });
 });
 

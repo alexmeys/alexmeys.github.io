@@ -1,4 +1,4 @@
-/*color : #3D3C3D; -> kleur voor rand tekst*/
+/*color : #fff; -> kleur voor rand tekst*/
 /* font styles */
 @font-face{
   font-family: 'AktivGrotesk';
@@ -30,7 +30,12 @@ body {
 .logo {
   font-size: 24px;
 }
-
+.menu-img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin-right: 10px;
+}
 /* Navigation styles */
 .bar, .nav {
   width: 100%;
@@ -53,21 +58,20 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .nav ul li {
   padding: 10px 0;
   text-align: center;
 }
 
 .nav ul li a {
-  color: #3D3C3D;
+  color: #fff;
   text-decoration: none;
 }
 
 /* Header styles */
 header {
   background-color: #333;
-  color: #3D3C3D;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,47 +84,41 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  padding: 0;
+  margin: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.98);
-  z-index: 1100;
+  z-index: 1000;
+  overflow-y: auto;
   list-style: none;
-  padding: 0;
+  padding-top: 50;
   margin: 0;
   box-sizing: border-box;
 }
-
+.overlay-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 .overlay-menu .menu-toggle,
 .overlay-menu li {
-  display: flex;
+  position: left;
+  padding-left: 50px;
+  text-align: left;
+  font-size: 48px;
 }
-
-.overlay-menu li {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  font-size: 28px;
-}
-
-.overlay-menu li:nth-child(1) { top: 20%; left: 35%; }
-.overlay-menu li:nth-child(2) { top: 20%; right: 35%; }
-.overlay-menu li:nth-child(3) { top: 40%; left: 35%; }
-.overlay-menu li:nth-child(4) { top: 40%; right: 35%; }
-.overlay-menu li:nth-child(5) { bottom: 20%; left:35% ;}
-.overlay-menu li:nth-child(6) { bottom: 20%; right:35% ;}
-
 
 .overlay-menu a {
   font-family: 'SomeTWild', cursive;
-  color: #3D3C3D;
+  color: #fff;
   text-decoration: none;
   display: block;
   line-height: 150px;
 }
 
 .overlay-menu.active {
-  display: flex;
+  display: block;
 }
 
 .overlay-menu .close-btn {
@@ -150,7 +148,7 @@ header {
   text-align: center;
 }
 .section p {
-  color: #3D3C3D;
+  color: #fff;
   display: inline-block;
   white-space: normal; 
   max-width: 600px; 
@@ -160,12 +158,12 @@ header {
 }
 h2.NoTime {
   font-family: 'NoTime', cursive;
-  color: #3D3C3D;
+  color: #fff;
   font-size: 35px;
 }
 h1.SomeTWild {
   font-family: 'SomeTWild', cursive;
-  color: #3D3C3D;
+  color: #fff;
   font-size: 48px;
   text-align: left;
 }
@@ -251,7 +249,7 @@ h1.SomeTWild {
   width: 40px;
   height: 40px;
   background-color: rgba(61, 60, 61, 0.98);
-  color: #001233;
+  color: #fff;
   border: 1px;
   border-color: black;
   border-radius: 50%;
@@ -283,7 +281,7 @@ h1.SomeTWild {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  color: #3D3C3D;
+  color: #fff;
   font-family: 'AktivGrotesk', sans-serif;
 }
 
