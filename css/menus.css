@@ -1,0 +1,72 @@
+/* menu specific styles */
+#home {
+  position: relative;
+  text-align: center;
+}
+.menu-img {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  margin-right: 10px;
+}
+.MeImg {
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
+.menu-lang {
+  display: flex;
+  align-items: center;
+}
+.menu-lang img {
+  width: 40px;
+  height: auto;
+  float: right;
+  margin: 0 5px;
+  filter: grayscale(70%);
+  transition: filter 0.3s ease;
+}
+.menu-lang img:hover {
+  filter: grayscale(0%);
+}
+/* First Section */
+.first-section {
+  height: 100vh;
+}
+.header-content {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: auto;
+}
+
+/* Additional Sections in One Big Frame */
+.additional-sections {
+  min-height: 83.3vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+  font-family: 'AktivGrotesk', sans-serif;
+  font-size: 20px;
+}
+
+.footer-column {
+  width: 18%;
+  text-align: center;
+  color: #174C67;
+}
+/* screen size per section*/
+#about { height: 16.67%; }
+#career { height: 16.67%; }
+#skills { height: 16.67%; }
+#certs { height: 16.67%; }
+#contact { height: 16.67%; }

@@ -29,12 +29,7 @@ body {
 .logo {
   font-size: 24px;
 }
-.menu-img {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  margin-right: 10px;
-}
+
 /* Navigation styles */
 .bar, .nav {
   width: 100%;
@@ -43,18 +38,12 @@ body {
   border-radius: 2px;
   transition: transform 0.3s ease;
 }
-.LHomeImg {
-  width: 350px;
-  height: auto;
-  float: left;
-  margin-right: 10px;
-}
 .nav {
   display: none;
 }
 
 .nav.active {
-  display: block;
+  display: flex;
 }
 
 .nav ul {
@@ -91,13 +80,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 .section p {
   color: #fff;
   display: inline-block;
-  white-space: normal; 
-  width: calc(90vw); 
+  white-space: normal;
+  width: 90vw;  
   overflow: hidden;
   font-size: 28px;
   text-align: left;
@@ -112,40 +100,7 @@ h1.SomeTWild {
   font-family: 'SomeTWild', cursive;
   color: #fff;
   font-size: 48px;
-  text-align: left;
-}
-
-/* First Section */
-.first-section {
-  min-height: 16.67vh;
-  
-}
-
-/* Additional Sections in One Big Frame */
-.additional-sections {
-  min-height: 83.3vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  color: #fff;
-  font-family: 'AktivGrotesk', sans-serif;
-  font-size: 20px;
-}
-
-.footer-column {
-  width: 18%;
   text-align: center;
-  color: #174C67;
+  margin-bottom: -50px;
+  margin-left: 100px;
 }
-/* scherm gebruiker per sector*/
-#about { height: 16.67%; }
-#career { height: 16.67%; }
-#skills { height: 16.67%; }
-#certs { height: 16.67%; }
-#contact { height: 16.67%; }

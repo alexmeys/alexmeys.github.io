@@ -8,7 +8,7 @@
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(26, 26, 25, 0.99);
+  background-color: rgba(26, 26, 25, 0.995);
   z-index: 1000;
   overflow-y: auto;
   list-style: none;
@@ -33,7 +33,6 @@
   text-align: center;
   font-size: 48px;
 }
-
 .overlay-menu a {
   font-family: 'SomeTWild', cursive;
   color: #fff;
@@ -41,11 +40,12 @@
   display: block;
   line-height: 16.67vh;
 }
-
+.overlay-menu li a:hover{
+  color: #174C67;
+}
 .overlay-menu.active {
   display: block;
 }
-
 .overlay-menu .close-btn {
   position: absolute;
   top: 20px;

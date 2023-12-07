@@ -8,6 +8,19 @@
   font-size: 20px;
   cursor: pointer;
 }
+.lower-btn {
+  background-color: #174C67;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .menu-holder {
   position: relative;
 }
@@ -38,14 +51,14 @@
 }
 
 .menu-toggle.active + .close-btn {
-  display: block;
+  display: flex;
 }
 .menu-toggle, .close-btn, .menu-btn {
   cursor: pointer;
 }
 .menu-holder.active .close-btn,
 .menu-holder.active .menu-toggle {
-  display: block;
+  display: flex;
 }
 
 .menu-holder.active .menu-toggle {
