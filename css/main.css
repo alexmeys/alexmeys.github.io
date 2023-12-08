@@ -101,6 +101,16 @@ h1.SomeTWild {
   color: #fff;
   font-size: 48px;
   text-align: center;
-  margin-bottom: -50px;
-  margin-left: 100px;
+  margin-bottom: 20px;
+}
+h1.SomeTWild:hover {
+  font-size: 48px; 
+}
+.headerT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 150px;
+  max-height: 300px;
 }

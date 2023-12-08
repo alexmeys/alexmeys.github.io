@@ -16,12 +16,13 @@
 	<link rel="stylesheet" href="./css/interact.css">
 	<link rel="stylesheet" href="./css/menus.css">
 	<link rel="icon" type="image/x-icon" href="./pictures/meta/fav.png">
+	<script src="./js/gen.js"></script>
 	</head>
 <body>
   <div id="container">
 	<div class="menu-holder">
 	  <div class="menu-img">
-	  <img src="./pictures/meta/am80.png" alt="Logo"></div>
+	  <img src="./pictures/meta/am80.png" onerror="imgError(this);"></div>
 	  <div class="menu-toggle">
       <div class="bar"></div>
       <div class="bar"></div>
@@ -38,15 +39,15 @@
 	  </ul>
 	</div>
     <div id="home" class="section first-section">
-	  <h1 class="SomeTWild" id="languageText">Hi, Welcome</h1>
 	  <div class="header-content">
-		<img src="./pictures/AlexMain.png" alt="Me" class="MeImg">
+	    <img src="./pictures/AlexMain.png" class="MeImg" onerror="imgError(this);">
 	    <div class="menu-lang">
-		  <img src="./pictures/flags/be.png" alt="BE" title="Nederlands" id="flagBE">
-		  <img src="./pictures/flags/fr.png" alt="FR" title="Français" id="flagFR">
-		  <img src="./pictures/flags/us.png" alt="EN" title="English" id="flagEN">
-		  <img src="./pictures/flags/pl.png" alt="PL" title="Polski" id="flagPL">
+		  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
+		  <img src="./pictures/flags/fr.png" id="flagFR" onerror="imgError(this);">
+		  <img src="./pictures/flags/us.png" id="flagEN" onerror="imgError(this);">
+		  <img src="./pictures/flags/pl.png" id="flagPL" onerror="imgError(this);">
 	    </div>
+		<div class="headerT"><h1 class="SomeTWild" id="languageText">Hi, Welcome</h1></div>
 	    <a href="http://#">
 	    <button class="lower-btn">Continue</button></a>
 	  </div>

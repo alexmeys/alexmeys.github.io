@@ -12,23 +12,25 @@
 .MeImg {
   width: 100px;
   height: auto;
-  float: left;
+  float: center;
   margin-right: 10px;
 }
 .menu-lang {
   display: flex;
+  position: relative;
   align-items: center;
+  padding-top: 10px;
 }
 .menu-lang img {
   width: 40px;
   height: auto;
-  float: right;
   margin: 0 5px;
-  filter: grayscale(70%);
+  filter: grayscale(75%);
   transition: filter 0.3s ease;
 }
 .menu-lang img:hover {
   filter: grayscale(0%);
+  transform: scale(1.5);
 }
 /* First Section */
 .first-section {
@@ -36,6 +38,8 @@
 }
 .header-content {
   display:flex;
+  position: relative;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
