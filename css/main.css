@@ -103,7 +103,7 @@ h1.Lato:hover {
   width: 100%;
   min-height: 35px;
   max-height: 45px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 @media (max-width: 768px){
   h1.Lato {
