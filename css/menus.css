@@ -34,6 +34,7 @@
 }
 /* First Section */
 .first-section {
+  position: relative;
   height: 100vh;
 }
 .header-content {

@@ -111,6 +111,7 @@ h1.SomeTWild:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 150px;
-  max-height: 300px;
+  min-height: 15px;
+  max-height: 20px;
+  padding-bottom: 10px;
 }

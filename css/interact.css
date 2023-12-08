@@ -8,6 +8,12 @@
   font-size: 20px;
   cursor: pointer;
 }
+.button-container {
+  position: absolute;
+  bottom: 100px; /* Adjust as needed to place the button at the desired position */
+  width: 100%; /* Make the container full width */
+  text-align: center;
+}
 .lower-btn {
   background-color: #174C67;
   color: white;
@@ -16,10 +22,6 @@
   padding: 10px 20px;
   font-size: 20px;
   cursor: pointer;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
 }
 @media (max-width: 768px){
   .lower-btn {
