@@ -6,23 +6,26 @@ const flagPL = document.getElementById('flagPL');
 const languageText = document.getElementById('languageText');
 const lowerButton = document.querySelector('.lower-btn');
 
-// Variables to store the last hovered text and last clicked flag text
+//  Configure default stuff on hover
 let lastHoveredText = "Hi there, Welcome!";
-let lastClickedFlagText = "Continue";
 
-// Function to handle text change on flag hover
+// Function to on flag hover, change text (and lower-btn)
 function changeTextOnHover(text) {
     languageText.textContent = text;
     lastHoveredText = text;
+
+    if (text === 'Hallo daar, Welkom!') {
+        lowerButton.textContent = 'Verder';
+    } else if (text === 'Salut, Bienvenue!') {
+        lowerButton.textContent = 'Continuer';
+    } else if (text === 'Hi there, Welcome!') {
+        lowerButton.textContent = 'Continue';
+    } else if (text === 'Cześć, Witaj!') {
+        lowerButton.textContent = 'Idź dalej';
+    }
 }
 
-// Function to handle text change on flag click
-function changeTextOnClick(text) {
-    lowerButton.textContent = text;
-    lastClickedFlagText = text;
-}
-
-// Set event listeners for hover on each flag to change the text
+// Actions set on change
 flagBE.addEventListener('mouseover', () => {
     changeTextOnHover('Hallo daar, Welkom!');
 });
@@ -39,28 +42,11 @@ flagPL.addEventListener('mouseover', () => {
     changeTextOnHover('Cześć, Witaj!');
 });
 
-// Set event listeners for click on each flag to change the button text
-flagBE.addEventListener('click', () => {
-    changeTextOnClick('Scroll naar beneden');
-});
-
-flagFR.addEventListener('click', () => {
-    changeTextOnClick('Faites défiler vers le bas');
-});
-
-flagEN.addEventListener('click', () => {
-    changeTextOnClick('Scroll down');
-});
-
-flagPL.addEventListener('click', () => {
-    changeTextOnClick('Przewiń w dół');
-});
-
-// Set the default text for the language text and lower button
+// Default sets & lower-btn
 languageText.textContent = lastHoveredText;
-lowerButton.textContent = lastClickedFlagText;
+lowerButton.textContent = 'Continue'; 
 
-// Retain the last hovered text when not hovering over any flag
+// Retain hovered text
 const allFlags = [flagBE, flagFR, flagEN, flagPL];
 allFlags.forEach(flag => {
     flag.addEventListener('mouseout', () => {
