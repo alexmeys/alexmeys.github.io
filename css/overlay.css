@@ -12,24 +12,18 @@
   z-index: 1000;
   overflow-y: auto;
   list-style: none;
-  padding-top: 50;
   margin: 0;
   box-sizing: border-box;
 }
 .overlay-menu ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
-  padding-top: 20px;
 }
 .overlay-menu .menu-toggle,
 .overlay-menu li {
   position: left;
-  padding-left: 50px;
   text-align: center;
   font-size: 23px;
 }
@@ -38,7 +32,7 @@
   color: #fff;
   text-decoration: none;
   display: block;
-  line-height: 16.67vh;
+  line-height: 15.67vh;
 }
 .overlay-menu li a:hover{
   color: #174C67;
