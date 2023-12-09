@@ -4,7 +4,6 @@
   src: url('../fonts/Lato-Regular.ttf') format('truetype'),
        url('../fonts/Lato-Italic.ttf') format('truetype');
 }
-
 /* body styles */
 body {
   overflow-x: hidden;
@@ -78,23 +77,23 @@ header {
 }
 h2.Lato {
   font-family: 'Lato', cursive;
-  font-style: Italic;
+  font-style: italic;
   color: #fff;
   font-size: 35px;
   padding-top: 60px;
 }
-h1.Lato {
+h1.lato {
   font-family: 'Lato', cursive;
-  font-style: Italic;
+  font-style: italic;
   color: #fff;
   font-size: 48px;
   text-align: center;
   margin-bottom: 20px;
 }
-h1.Lato:hover {
+h1.lato:hover {
   font-size: 48px;
   font-family: 'Lato', cursive;
-  font-style: Italic;
+  font-style: italic;
 }
 .headerT {
   display: flex;
@@ -106,9 +105,9 @@ h1.Lato:hover {
   padding-bottom: 80px;
 }
 @media (max-width: 768px){
-  h1.Lato {
+  h1.lato {
     font-family: 'Lato', cursive;
-	font-style: Italic;
+	font-style: italic;
     color: #fff;
     font-size: 23px;
     text-align: center;
