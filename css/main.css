@@ -172,6 +172,11 @@ h4.lato {
   animation: fadeInUp 1s ease-in-out forwards;
   animation-delay: 4s;
   transform: translateY(20px);
+  flex-direction: column;
+}
+.darrow {
+  color: #fff;
+  font-size: 40px;
 }
 @keyframes fadeInUp {
   0% {
@@ -185,6 +190,7 @@ h4.lato {
 }
 .cleanlink {
 	text-decoration: none;
+	color: #fff;
 }
 .letter-paragraph {
   overflow: hidden;

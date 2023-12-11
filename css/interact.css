@@ -11,16 +11,15 @@
   cursor: pointer;
 }
 .lower-btn {
-  background-color: #174C67;
   color: white;
   font-family: 'Lato', sans-serif;
   border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
   font-size: 20px;
   cursor: pointer;
   display: block;
   margin: 0 auto;
+  outline: none;
+  background-color: transparent;
 }
 
 @media (max-width: 768px){
