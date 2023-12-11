@@ -107,6 +107,7 @@ h4.lato {
   left: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
   animation: fadeInLeft 1s ease forwards;
+  animation-delay: 1.5s;
 }
 .header-content h4::after {
   content: '';
@@ -119,6 +120,7 @@ h4.lato {
   right: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
   animation: fadeInRight 1s ease forwards;
+  animation-delay: 1.5s;
 }
 @keyframes fadeInLeft {
   0% {
@@ -143,7 +145,7 @@ h4.lato {
 .headersub {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards; 
-  animation-delay: 1s;
+  animation-delay: 3s;
   color: #fff;
   letter-spacing: 3px;
   font-size: 20px;
@@ -168,7 +170,7 @@ h4.lato {
   margin-bottom: 60px;
   opacity: 0;
   animation: fadeInUp 1s ease-in-out forwards;
-  animation-delay: 2s;
+  animation-delay: 4s;
   transform: translateY(20px);
 }
 @keyframes fadeInUp {
