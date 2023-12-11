@@ -58,8 +58,8 @@ header {
 }
 /* Section styles */
 .section {
-  padding: 20px;
-  min-height: 200px;
+  padding: 0px;
+  min-height: 100vh;
   flex: 1;
   flex-direction: column;
   display: flex;
@@ -70,7 +70,6 @@ header {
   color: #fff;
   display: inline-block;
   white-space: normal;
-  width: 90vw;
   overflow: hidden;
   font-size: 28px;
   text-align: left;
@@ -78,42 +77,129 @@ header {
 h2.Lato {
   font-family: 'Lato', cursive;
   font-style: italic;
-  color: #fff;
+  color: #174C67;
   font-size: 35px;
-  padding-top: 60px;
+  padding-top: 10px;
 }
-h1.lato {
-  font-family: 'Lato', cursive;
-  font-style: italic;
+h4.lato {
+  font-size: 28px;
   color: #fff;
-  font-size: 48px;
-  text-align: center;
-  margin-bottom: 20px;
+  letter-spacing: 3px;
 }
-h1.lato:hover {
-  font-size: 48px;
-  font-family: 'Lato', cursive;
-  font-style: italic;
+.header-content {
+  position: relative;
+  overflow: hidden;
 }
-.headerT {
+.header-content h4 {
+  position: relative;
+  line-height: 1.8em;
+  padding: 0.35em 1em;
+  margin-bottom: 30px;
+}
+.header-content h4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+  left: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  animation: fadeInLeft 1s ease forwards;
+}
+.header-content h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+  right: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  animation: fadeInRight 1s ease forwards;
+}
+@keyframes fadeInLeft {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+.headersub {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards; 
+  animation-delay: 1s;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 20px;
+  padding-bottom: 37px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.button-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 5px;
   width: 100%;
-  min-height: 35px;
-  max-height: 45px;
-  padding-bottom: 80px;
+  text-align: center;
+  margin-bottom: 60px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 2s;
+  transform: translateY(20px);
 }
-@media (max-width: 768px){
-  h1.lato {
-    font-family: 'Lato', cursive;
-	font-style: italic;
-    color: #fff;
-    font-size: 23px;
-    text-align: center;
-    margin-bottom: 20px; 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .cleanlink {
 	text-decoration: none;
+}
+.letter-paragraph {
+  overflow: hidden;
+}
+.enlarged-letter {
+  font-size: 60px;
+  float: left;
+  margin-right: 10px;
+  font-family: 'Georgia', serif;
+  color: #174C67;
+  font-weight: bold;
+}
+.quoting {
+  font-size: 28px;
+  float: left;
+  margin-right: 10px;
+  font-family: 'Georgia', serif;
+  color: #fff;
+  padding: 20px 0px;
 }

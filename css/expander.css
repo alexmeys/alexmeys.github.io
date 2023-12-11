@@ -1,0 +1,124 @@
+.expandable-container {
+  margin-top: 20px;
+  width: 85vw;
+}
+.expandable-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  min-height: 80px;
+}
+.expandable-heading {
+  color: #174C67;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.details {
+  display:flex;
+  flex-direction: column;
+  margin-right: 20px;
+  color: rgba(204, 204, 204, 0.5);
+}
+.detailscurrent {
+  display:flex;
+  flex-direction: column;
+  margin-right: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+.expand-toggle {
+  font-size: 40px;
+  color: rgba(204, 204, 204, 0.5);
+  align-self: flex-start;
+}
+.expand-togglecurrent {
+  font-size: 40px;
+  color: rgba(255, 255, 255, 1);
+  align-self: flex-start;
+}
+.expandable-content {
+  display: none;  
+}
+.expandable-content p {
+  color: #fff;
+  font-size: 18px;
+}
+.expandable-row.expanded {
+  border-bottom: none;
+}
+.expandable-row.expanded .expand-toggle {
+  transform: rotate(180deg);
+}
+.expandable-row.expanded .expand-togglecurrent {
+  transform: rotate(180deg);
+}
+.expandable-row.expanded .expandable-content {
+  display: block;
+}
+.title-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.title-toggle .expandable-heading {
+  margin-bottom: 10px;
+}
+.jobloc, .jobdate {
+  padding: 5px 0;
+}
+.title-toggle .jobloc,
+.title-toggle .jobdate {
+  font-style: italic;
+  margin: 10px;  
+}
+.title-toggle .expand-toggle {
+  align-self: flex-start;
+}
+.menu-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+.menu-skills img {
+  width: 40px;
+  height: auto;
+  margin: 0 5px;
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.skill-item {
+  text-align: center;
+  padding: 0px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 7px;
+  min-width: 150px;
+  min-height: auto;
+}
+.skill-item img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.skill-description p {
+  margin: 0px;
+}
