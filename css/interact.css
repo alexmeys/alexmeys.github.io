@@ -124,7 +124,6 @@
   line-height: 5px;
   z-index: 1000;
 }
-
 .scroll-to-top.active {
   display: block;
 }

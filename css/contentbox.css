@@ -1,0 +1,86 @@
+#career-content {
+  width: 90vw;
+  height: 100vh;
+  display: none;
+}
+#career-content.active {
+  width: 90vw;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto; 
+}
+@media (min-width: 1000px){
+  #career-content.active {
+    width: 75vw;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+  }
+}
+#contact-content {
+  width: 90vw;
+  height: 90%;
+  text-align: center;
+  display: none;
+}
+#contact-content.active {
+  width: 90vw;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#skills-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#skills-content.active {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+.button-box {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 50px;
+}
+.transparent-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: #ccc;
+  letter-spacing: 2px;
+}
+.transparent-btn.active {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
+}

@@ -1,0 +1,71 @@
+.carousel {
+  position: relative;
+  display: flex; /* Set the carousel items to display in a row */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* Snap items to position */
+  -webkit-overflow-scrolling: touch; /* smooth iOS */
+  scrollbar-width: none; /* specific FF */
+  -ms-overflow-style: none; /* specific IE/Edge */
+  height: 90%;
+}
+.carousel-item {
+  display: block;
+  flex: 0 0 auto; /* fix size for items */
+  scroll-snap-align: start; /* align to start */
+  width: 90vw;
+  height: 100%;
+}
+@media (min-width: 768px){
+  .carousel {
+	width: 85vw;
+  }
+  .carousel-item {
+    width: 85vw;
+  }
+  .carousel-content {
+	height: 100%;
+	width: 100%;
+  }
+}
+.carousel-item.active {
+  display: block;
+}
+.carousel::-webkit-scrollbar {
+  display: none; /* Hide scrollbar Chrome, Safari, Opera */
+}
+.carousel-mark {
+  font-size: 20px;
+  color: #ccc;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+}
+.carousel-text {
+  margin-left: 10px;
+}
+
+.carousel-titleT h3 {
+  color: #174C67;
+  font-size: 32px;
+}
+.carousel-info {
+  display: flex;
+  flex-direction: column;
+}
+.carousel-info p {
+  margin: 0;
+  padding: 0;
+}
+.carousel-story {
+  flex: 1;
+}

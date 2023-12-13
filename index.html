@@ -14,10 +14,10 @@
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./css/overlay.css">
 	<link rel="stylesheet" href="./css/interact.css">
-	<link rel="stylesheet" href="./css/menus.css">
-	<link rel="stylesheet" href="./css/expander.css">
+	<link rel="stylesheet" href="./css/contentbox.css">
+	<link rel="stylesheet" href="./css/carousel.css">
 	<link rel="icon" type="image/x-icon" href="./pictures/meta/fav.png">
-	<script src="./js/gen.js"></script>
+	<script src="./js/GenSet.js"></script>
 	</head>
 <body>
   <div id="container">
@@ -29,7 +29,7 @@
 	  </div>
 	  <div class="close-btn"></div>
 	  <ul class="overlay-menu">
-		<li><a href="#home">Welcome</a></li>
+		<li><a href="#home">Alex Meys © 2023</a></li>
 	  </ul>
 	</div>
     <div id="home" class="section first-section">
@@ -45,348 +45,51 @@
 	  <div class="headersub" id="languageText"><p>Systems | Networks | Analysis | Design</p></div>
 	  <div class="button-container">
 	    <div class="btext">
-		<a href="#career" class="cleanlink">
+		<a href="#filler" class="cleanlink">
 	      <button class="lower-btn">Continue</button></a>
 		</div>
-		<div class="darrow"><a href="#career" class="cleanlink">&#x2B07;</a>
+		<div class="darrow"><a href="#filler" class="cleanlink">&#x2B07;</a>
 		</div>
 	  </div>
 	</div>
-	<div class="additional-sections">
-	  <div id="career" class="section">
-		<div class="expandable-container">
-		  <div class="expandable-row">
-			<div class="title-toggle">
-		      <h3 class="expandable-heading">IT Business Analyst</h3>
-			  <span class="expand-togglecurrent">&#x2B07;</span>
-			</div>
-			<div class="detailscurrent">
-			  <div class="jobloc">Netflow IT</div>
-			  <div class="jobdate">2023 - Present</div>
-			</div>
-		    <div class="expandable-content">
-			  <p>As a senior system and network engineer i did a lot of stuff</p>
+    <div id="filler" class="section">
+	  <div class="filler-sections">
+		<div class="content-box">
+		  <div class="button-box">
+		    <button class="transparent-btn" id="career-btn" data-content="career-content" onclick="showContent('career-content')">Career</button>
+		    <button class="transparent-btn" id="skills-btn" data-content="skills-content" onclick="showContent('skills-content')">Skills</button>
+		    <button class="transparent-btn" id="contact-btn" data-content="contact-content" onclick="showContent('contact-content')">Contact</button>
+		  </div>
+		  <div id="career-content" class="content">
+		    <div class="carousel">
 		    </div>
 		  </div>
-  		  <div class="expandable-row">
-			<div class="title-toggle">
-		      <h3 class="expandable-heading">Senior System & Network Engineer</h3>
-			  <span class="expand-togglecurrent">&#x2B07;</span>
-			</div>
-			<div class="detailscurrent">
-			  <div class="jobloc">Netflow IT</div>
-			  <div class="jobdate">2020 - Present</div>
-			</div>
-		    <div class="expandable-content">
-			  <p>As a senior system and network engineer i did a lot of stuff</p>
-		    </div>
+		  <div id="skills-content" class="content">
 		  </div>
-		  <div class="expandable-row">
-			<div class="title-toggle">
-		      <h3 class="expandable-heading">System & Network Engineer</h3>
-			  <span class="expand-toggle">&#x2B07;</span>
-			</div>
-			<div class="details">
-			  <div class="jobloc">Netflow IT</div>
-			  <div class="jobdate">2016 - 2020</div>
-			</div>
-		    <div class="expandable-content">
-			  <p>As a system and network engineer i did a lot of stuff</p>
+		  <div id="contact-content" class="content">
+		    <div class="quotes">
+		      <p>Fluent in Geek, Fluent in Speak—bridging worlds, one word at a time!</p>
 		    </div>
-		  </div>
-		  <div class="expandable-row">
-			<div class="title-toggle">
-		      <h3 class="expandable-heading">System & Network Administrator</h3>
-			  <span class="expand-toggle">&#x2B07;</span>
-			</div>
-			<div class="details">
-			  <div class="jobloc">Netflow IT</div>
-			  <div class="jobdate">Date: 2012 - 2016</div>
-			</div>
-		    <div class="expandable-content">
-			  <p>As a system and network Administrator i did a lot of stuff</p>
-		    </div>
-		  </div>
-		  <div class="expandable-row">
-			<div class="title-toggle">
-		      <h3 class="expandable-heading">Servicedesk & PC Repair</h3>
-			  <span class="expand-toggle">&#x2B07;</span>
-			</div>
-			<div class="details">
-			  <div class="jobloc">Netflow IT</div>
-			  <div class="jobdate">2010 - 2012</div>
-			</div>
-		    <div class="expandable-content">
-			  <p>As a SD & PC Repair i did a lot of stuff</p>
+		    <div class="mnu-soc">
+			  <ul class="icons">
+			    <li>
+				  <a href="https://linkedin.com/in/alex-meys" title="Linkedin" target="_blank"><img src="./pictures/meta/lkdn.png" onerror="imgError(this);"></a>
+			    </li>
+			    <li>
+				  <a href="https://github.com/alexmeys" title="Github" target="_blank"><img src="./pictures/meta/gthb.png" onerror="imgError(this);"></a> 
+			    </li>
+			  </ul>
 		    </div>
 		  </div>
 	    </div>
 	  </div>
-	  <div id="skills" class="section">
-		<div class="expandable-container">
-		  <div class="expandable-row">
-			<div class="title-toggle">
-		      <h3 class="expandable-heading">System Skills</h3>
-			  <span class="expand-togglecurrent">&#x2B07;</span>
-			</div>
-		    <div class="expandable-content">
-			  <div class="menu-skills">
-			    <ul class="skills-grid">
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description2</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description3</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description4</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description5</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description6</p>
-					  </div>
-				    </div>
-				  </li>
-			    </ul>
-			  </div>
-		    </div>
-		  </div>
-  		  <div class="expandable-row">
-			<div class="title-toggle">
-		      <h3 class="expandable-heading">Network skills</h3>
-			  <span class="expand-togglecurrent">&#x2B07;</span>
-			</div>
-		    <div class="expandable-content">
-			  <div class="menu-skills">
-			    <ul class="skills-grid">
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description2</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description3</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description4</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description5</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description6</p>
-					  </div>
-				    </div>
-				  </li>
-			    </ul>
-			  </div>
-		    </div>
-		  </div>
-		  <div class="expandable-row">
-			<div class="title-toggle">
-		      <h3 class="expandable-heading">Development</h3>
-			  <span class="expand-togglecurrent">&#x2B07;</span>
-			</div>
-		    <div class="expandable-content">
-			  <div class="menu-skills">
-			    <ul class="skills-grid">
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description2</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description3</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description4</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description5</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description6</p>
-					  </div>
-				    </div>
-				  </li>
-			    </ul>
-			  </div>
-		    </div>
-		  </div>
-		  <div class="expandable-row">
-			<div class="title-toggle">
-		      <h3 class="expandable-heading">Assorted</h3>
-			  <span class="expand-togglecurrent">&#x2B07;</span>
-			</div>
-		    <div class="expandable-content">
-			  <div class="menu-skills">
-			    <ul class="skills-grid">
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description2</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description3</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description4</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description5</p>
-					  </div>
-				    </div>
-				  </li>
-				  <li>
-				    <div class="skill-item">
-					  <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
-					  <div class="skill-description">
-					    <p>skill description6</p>
-					  </div>
-				    </div>
-				  </li>
-			    </ul>
-			  </div>
-		    </div>
-		  </div>
-	    </div>
-	  </div>
-	  <div id="contact" class="section">
-		<span class="quoting">-Fluent in Geek, Fluent in Speak—bridging worlds, one word at a time!-</span>
-		<div class="mnu-soc">
-		  <ul class="icons">
-		    <li>
-			  <a href="https://linkedin.com/in/alex-meys" title="Linkedin" target="_blank"><img src="./pictures/meta/lkdn.png" onerror="imgError(this);"></a>
-			</li>
-			<li>
-			  <a href="https://github.com/alexmeys" title="Github" target="_blank"><img src="./pictures/meta/gthb.png" onerror="imgError(this);"></a> 
-			</li>
-		  </ul>
-		</div>
-	  </div>
-	</div>
-	<footer class="footer">
-	  <p>Design & Development by Alex Meys © 2023</p>
-	</footer>
+    </div>
   </div>
   <button class="scroll-to-top" onclick="scrollToTop()">&#x2B06;</button>
+
   <script src="./js/OverlayMenu.js"></script>
-  <script src="./js/flagChange.js"></script>
-  <script src="./js/expander.js"></script>
+  <script src="./js/FlagChange.js"></script>
+  <script src="./js/ContentBox.js"></script>
+  <script src="./js/Carousel.js"></script>
 </body>
 </html>
