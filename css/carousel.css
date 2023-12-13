@@ -17,10 +17,10 @@
 }
 @media (min-width: 768px){
   .carousel {
-	width: 85vw;
+	width: 75vw;
   }
   .carousel-item {
-    width: 85vw;
+    width: 75vw;
   }
   .carousel-content {
 	height: 100%;
