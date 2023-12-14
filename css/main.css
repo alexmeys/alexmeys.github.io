@@ -38,14 +38,14 @@ body {
   text-align: center;
 }
 .nav ul li a {
-  color: #EDEDED;
+  color: #F0F0F0;
   text-decoration: none;
 }
 
 /* Header styles */
 header {
-  background-color: #333;
-  color: #EDEDED;
+  background-color: #2E2E2E;
+  color: #F0F0F0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,9 +63,9 @@ header {
   text-align: center;
 }
 .section p {
-  color: #EDEDED;
+  color: #F0F0F0;
   display: inline-block;
-  #EDEDED-space: normal;
+  white-space: normal;
   overflow: hidden;
   text-align: left;
 }
@@ -77,7 +77,7 @@ header {
 }
 h4.lato {
   font-size: 28px;
-  color: #EDEDED;
+  color: #F0F0F0;
   letter-spacing: 3px;
 }
 .header-content {
@@ -96,7 +96,7 @@ h4.lato {
   top: 0;
   width: 0;
   height: 2px;
-  background-color: #EDEDED;
+  background-color: #F0F0F0;
   opacity: 0;
   left: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -109,7 +109,7 @@ h4.lato {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #EDEDED;
+  background-color: #F0F0F0;
   opacity: 0;
   right: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -140,7 +140,7 @@ h4.lato {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards; 
   animation-delay: 3s;
-  color: #EDEDED;
+  color: #F0F0F0;
   letter-spacing: 3px;
   font-size: 20px;
   padding-bottom: 37px;
@@ -169,7 +169,7 @@ h4.lato {
   flex-direction: column;
 }
 .darrow {
-  color: #EDEDED;
+  color: #F0F0F0;
   font-size: 40px;
 }
 @keyframes fadeInUp {
@@ -184,11 +184,11 @@ h4.lato {
 }
 .cleanlink {
 	text-decoration: none;
-	color: #EDEDED;
+	color: #F0F0F0;
 }
 .quotes {
   font-family: 'Georgia', serif;
-  color: #EDEDED;
+  color: #F0F0F0;
 }
 
 /* First Section */
@@ -262,7 +262,7 @@ h4.lato {
   width: 40px;
   height: 40px;
   background-color: #174C67;
-  color: #EDEDED;
+  color: #F0F0F0;
   border: 1px;
   border-color: black;
   border-radius: 50%;

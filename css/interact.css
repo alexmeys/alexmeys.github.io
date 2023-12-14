@@ -1,6 +1,6 @@
 /* Menu and button Toggles */
 .lower-btn {
-  color: #EDEDED;
+  color: #F0F0F0;
   border: none;
   cursor: pointer;
   display: block;
@@ -83,7 +83,7 @@
   width: 40px;
   height: 40px;
   background-color: #174C67;
-  color: #EDEDED;
+  color: #F0F0F0;
   border: 1px;
   border-color: black;
   border-radius: 50%;
