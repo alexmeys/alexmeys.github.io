@@ -12,6 +12,14 @@ body {
   background-color: #2E2E2E;
   margin: 0;
   padding: 0;
+  font-size: 17px;
+  line-height: 27px;
+}
+@media (max-width: 767px) {
+  .body p {
+	font-size: 16px;
+	line-height: 26px;
+  }
 }
 
 /* Overlay Navigation Styles */
@@ -80,6 +88,7 @@ h4.lato {
   color: #F0F0F0;
   letter-spacing: 3px;
 }
+
 .header-content {
   position: relative;
   overflow: hidden;
@@ -170,7 +179,7 @@ h4.lato {
 }
 .darrow {
   color: #F0F0F0;
-  font-size: 40px;
+  font-size: 35px;
 }
 @keyframes fadeInUp {
   0% {
@@ -188,7 +197,9 @@ h4.lato {
 }
 .quotes {
   font-family: 'Georgia', serif;
+  font-style: italic;
   color: #F0F0F0;
+  font-size: 23px;
 }
 
 /* First Section */

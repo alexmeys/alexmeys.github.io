@@ -54,14 +54,24 @@
 }
 .carousel-titleT h3 {
   color: #174C67;
+  font-size: 36px;
+  margin: 20px 0px;
+}
+@media (max-width: 767px) {
+  .carousel-titleT h3 {
+	font-size: 24px;
+  }
 }
 .carousel-info {
   display: flex;
   flex-direction: column;
+  font-family: 'Lato', cursive;
+  font-style: italic;
 }
 .carousel-info p {
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
 .carousel-story {
   flex: 1;
