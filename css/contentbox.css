@@ -63,13 +63,12 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 25px;
-  color: #ccc;
+  color: #CCC;
   letter-spacing: 2px;
 }
 .transparent-btn.active {
-  color: #fff;
-  border-bottom: 1px solid #fff;
+  color: #EDEDED;
+  border-bottom: 1px solid #EDEDED;
 }
 .content-box {
   display: flex;

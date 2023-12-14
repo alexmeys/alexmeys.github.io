@@ -34,8 +34,7 @@
   display: none; /* Hide scrollbar Chrome, Safari, Opera */
 }
 .carousel-mark {
-  font-size: 20px;
-  color: #ccc;
+  color: #CCC;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 50%;
@@ -56,7 +55,6 @@
 
 .carousel-titleT h3 {
   color: #174C67;
-  font-size: 32px;
 }
 .carousel-info {
   display: flex;

@@ -1,20 +1,7 @@
 /* Menu and button Toggles */
-.download-btn {
-  background-color: #174C67;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin: 20px;
-  margin-bottom: 50px;
-  font-size: 20px;
-  cursor: pointer;
-}
 .lower-btn {
-  color: white;
-  font-family: 'Lato', sans-serif;
+  color: #EDEDED;
   border: none;
-  font-size: 20px;
   cursor: pointer;
   display: block;
   margin: 0 auto;
@@ -25,21 +12,12 @@
 @media (max-width: 768px){
   .lower-btn {
 	position: relative;
-	padding: 8px 16px;
-	font-size:16px;
+	padding: 0px 16px;
 	bottom:5%;
 	margin: 0 auto;
   }
 }
-@media (max-width: 300px){
-  .lower-btn {
-	position: relative;
-	padding: 8px 16px;
-	font-size:16px;
-	bottom:5%;
-	margin: 0 auto;
-  }
-}
+
 .menu-holder {
   position: relative;
 }
@@ -114,7 +92,7 @@
   width: 40px;
   height: 40px;
   background-color: #174C67;
-  color: #fff;
+  color: #EDEDED;
   border: 1px;
   border-color: black;
   border-radius: 50%;

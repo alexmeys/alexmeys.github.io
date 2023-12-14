@@ -9,15 +9,12 @@
 body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
-  background-color: #1a1a1c;
+  background-color: #2E2E2E;
   margin: 0;
   padding: 0;
 }
-.logo {
-  font-size: 24px;
-}
 
-/* Navigation styles */
+/* Overlay Navigation Styles */
 .bar, .nav {
   width: 100%;
   height: 3px;
@@ -44,14 +41,14 @@ body {
 }
 
 .nav ul li a {
-  color: #fff;
+  color: #EDEDED;
   text-decoration: none;
 }
 
 /* Header styles */
 header {
   background-color: #333;
-  color: #fff;
+  color: #EDEDED;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,11 +66,10 @@ header {
   text-align: center;
 }
 .section p {
-  color: #fff;
+  color: #EDEDED;
   display: inline-block;
-  white-space: normal;
+  #EDEDED-space: normal;
   overflow: hidden;
-  font-size: 28px;
   text-align: left;
 }
 .filler-sections {
@@ -82,16 +78,9 @@ header {
   width: 100%;
   height: 100dvh;
 }
-h2.Lato {
-  font-family: 'Lato', cursive;
-  font-style: italic;
-  color: #174C67;
-  font-size: 35px;
-  padding-top: 10px;
-}
 h4.lato {
   font-size: 28px;
-  color: #fff;
+  color: #EDEDED;
   letter-spacing: 3px;
 }
 .header-content {
@@ -110,7 +99,7 @@ h4.lato {
   top: 0;
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: #EDEDED;
   opacity: 0;
   left: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -123,7 +112,7 @@ h4.lato {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: #EDEDED;
   opacity: 0;
   right: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -154,7 +143,7 @@ h4.lato {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards; 
   animation-delay: 3s;
-  color: #fff;
+  color: #EDEDED;
   letter-spacing: 3px;
   font-size: 20px;
   padding-bottom: 37px;
@@ -175,7 +164,7 @@ h4.lato {
   bottom: 5px;
   width: 100%;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   opacity: 0;
   animation: fadeInUp 1s ease-in-out forwards;
   animation-delay: 4s;
@@ -183,7 +172,7 @@ h4.lato {
   flex-direction: column;
 }
 .darrow {
-  color: #fff;
+  color: #EDEDED;
   font-size: 40px;
 }
 @keyframes fadeInUp {
@@ -198,26 +187,11 @@ h4.lato {
 }
 .cleanlink {
 	text-decoration: none;
-	color: #fff;
+	color: #EDEDED;
 }
-.letter-paragraph {
-  overflow: hidden;
-}
-.enlarged-letter {
-  font-size: 60px;
-  float: left;
-  margin-right: 10px;
+.quotes {
   font-family: 'Georgia', serif;
-  color: #174C67;
-  font-weight: bold;
-}
-
-.quoting {
-  float: left;
-  margin-right: 10px;
-  font-family: 'Georgia', serif;
-  color: #fff;
-  padding: 50px 0px;
+  color: #EDEDED;
 }
 
 /* First Section */
@@ -263,49 +237,6 @@ h4.lato {
   transform: scale(1.5);
 }
 
-/* Footer */
-.footer {
-  display: flex;
-  margin: 0 auto;
-}
-.footer p {
-  font-family: 'Lato', sans-serif;
-  font-style: Italic;
-  font-size: 20px;
-  color: #174C67;
-  text-align: center;
-  width: 100dvw;
-}
-@media (max-width: 1920px){
-  .footer p {
-	font-family: 'Lato', sans-serif;
-    font-style: Italic;
-    font-size: 20px;
-    color: #174C67;
-    text-align: center;
-    width: 60dvw;
-  }
-}
-@media (max-width: 541px){
-  .footer p {
-	font-family: 'Lato', sans-serif;
-    font-style: Italic;
-    font-size: 15px;
-    color: #174C67;
-    text-align: center;
-    width: 80dvw;
-  }
-}
-@media (max-width: 300px){
-  .footer p {
-	font-family: 'Lato', sans-serif;
-    font-style: Italic;
-    font-size: 15px;
-    color: #174C67;
-    text-align: center;
-    width: 100dvw;
-  }
-}
 /* social menu */
 .mnu-soc ul {
   list-style-type: none;
@@ -334,7 +265,7 @@ h4.lato {
   width: 40px;
   height: 40px;
   background-color: #174C67;
-  color: #fff;
+  color: #EDEDED;
   border: 1px;
   border-color: black;
   border-radius: 50%;
