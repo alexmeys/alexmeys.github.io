@@ -100,4 +100,4 @@ function populateCarousel(containerId, data) {
 }
 
 // Call the loadCareerData function with the desired language
-loadCareerData('en'); // Default language, change as needed
+loadCareerData('en'); // Default language, -> from browser invoegen
