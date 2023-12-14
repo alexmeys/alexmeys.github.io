@@ -49,7 +49,6 @@
   cursor: pointer;
   z-index: 1200;
 }
-
 .overlay-menu.active .close-btn {
   display: block;
 }
