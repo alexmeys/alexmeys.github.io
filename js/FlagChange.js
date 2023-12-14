@@ -10,19 +10,32 @@ const lowerButton = document.querySelector('.lower-btn');
 let lastHoveredText = "Systems | Networks | Analysis | Design";
 
 // Function to on flag hover, change text (and lower-btn)
-function changeTextOnHover(text) {
-    languageText.textContent = text;
-    lastHoveredText = text;
+function changeTextOnHover(text, language) {
+  languageText.textContent = text;
+  lastHoveredText = text;
 
-    if (text === 'Systemen | Netwerken | Analyseren | Ontwerpen') {
-        lowerButton.textContent = 'Verder';
-    } else if (text === 'Systèmes | Réseaux | Analyse | Conception') {
-        lowerButton.textContent = 'Continuer';
-    } else if (text === 'Systems | Networks | Analysis | Design') {
-        lowerButton.textContent = 'Continue';
-    } else if (text === 'Systemy | Sieci | Analiza | Projekt') {
-        lowerButton.textContent = 'Idź dalej';
-    }
+  // Trigger the language change based on the text of the flag
+  let langCode;
+  switch (text) {
+    case 'Systemen | Netwerken | Analyseren | Ontwerpen':
+      langCode = 'nl'; // Assuming this is Dutch
+      break;
+    case 'Systèmes | Réseaux | Analyse | Conception':
+      langCode = 'fr'; // French
+      break;
+    case 'Systems | Networks | Analysis | Design':
+      langCode = 'en'; // English
+      break;
+    case 'Systemy | Sieci | Analiza | Projekt':
+      langCode = 'pl'; // Polish
+      break;
+    default:
+      langCode = 'en'; // Set default language if not matched
+      break;
+  }
+
+  // Call the function to load data for the selected language
+  loadCareerData(langCode);
 }
 
 // Actions set on change
