@@ -1,10 +1,10 @@
 #career-content {
-  width: 90vw;
-  height: 100vh;
+  width: 90dvw;
+  height: 100dvh;
   display: none;
 }
 #career-content.active {
-  width: 90vw;
+  width: 90dvw;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -14,7 +14,7 @@
 }
 @media (min-width: 1000px){
   #career-content.active {
-    width: 75vw;
+    width: 75dvw;
     height: 100%;
     text-align: center;
     display: flex;
@@ -25,13 +25,13 @@
   }
 }
 #contact-content {
-  width: 90vw;
+  width: 90dvw;
   height: 90%;
   text-align: center;
   display: none;
 }
 #contact-content.active {
-  width: 90vw;
+  width: 90dvw;
   height: 100%;
   text-align: center;
   display: flex;
@@ -40,14 +40,14 @@
   align-items: center;
 }
 #skills-content {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
   display: none;
 }
 #skills-content.active {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +75,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
 }
 .content {

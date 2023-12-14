@@ -6,8 +6,8 @@
   left: 0;
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   background-color: rgba(26, 26, 25, 0.995);
   z-index: 1000;
   overflow-y: auto;
@@ -32,7 +32,7 @@
   color: #fff;
   text-decoration: none;
   display: block;
-  line-height: 100vh;
+  line-height: 100dvh;
 }
 .overlay-menu li a:hover{
   color: #174C67;

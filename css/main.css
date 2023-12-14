@@ -80,7 +80,7 @@ header {
   position: relative;
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
 }
 h2.Lato {
   font-family: 'Lato', cursive;
@@ -222,7 +222,7 @@ h4.lato {
 
 /* First Section */
 .first-section {
-  height: 100vh;
+  height: 100dvh;
 }
 
 /* menu specific styles */
@@ -274,7 +274,7 @@ h4.lato {
   font-size: 20px;
   color: #174C67;
   text-align: center;
-  width: 100vw;
+  width: 100dvw;
 }
 @media (max-width: 1920px){
   .footer p {
@@ -283,7 +283,7 @@ h4.lato {
     font-size: 20px;
     color: #174C67;
     text-align: center;
-    width: 60vw;
+    width: 60dvw;
   }
 }
 @media (max-width: 541px){
@@ -293,7 +293,7 @@ h4.lato {
     font-size: 15px;
     color: #174C67;
     text-align: center;
-    width: 80vw;
+    width: 80dvw;
   }
 }
 @media (max-width: 300px){
@@ -303,7 +303,7 @@ h4.lato {
     font-size: 15px;
     color: #174C67;
     text-align: center;
-    width: 100vw;
+    width: 100dvw;
   }
 }
 /* social menu */
