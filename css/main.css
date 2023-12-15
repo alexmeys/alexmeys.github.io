@@ -85,8 +85,8 @@ header {
   height: 100dvh;
 }
 .home-wrapper {
-  width: 70dvw;
-  height: 70dvh;
+  width: 77dvw;
+  height: 77dvh;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -99,8 +99,8 @@ header {
   background-color: #383838;
 }
 .career-wrapper {
-  width: 70dvw;
-  height: 70dvh;
+  width: 77dvw;
+  height: 77dvh;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -113,8 +113,8 @@ header {
   background-color: #383838;
 }
 .skills-wrapper {
-  width: 70dvw;
-  height: 70dvh;
+  width: 77dvw;
+  height: 77dvh;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -127,8 +127,8 @@ header {
   background-color: #383838;
 }
 .contact-wrapper {
-  width: 70dvw;
-  height: 70dvh;
+  width: 77dvw;
+  height: 77dvh;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -206,7 +206,7 @@ h4.lato {
   animation: fadeIn 1s ease-in-out forwards; 
   animation-delay: 3s;
   color: #F0F0F0;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: 20px;
   padding-bottom: 37px;
 }
@@ -218,15 +218,20 @@ h4.lato {
     opacity: 1;
   }
 }
+@media (max-width: 768px){
+  .headersub {
+	letter-spacing: 1.5px;
+  }
+}
 .button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   opacity: 0;
   animation: fadeInUp 1s ease-in-out forwards;
   animation-delay: 4s;
