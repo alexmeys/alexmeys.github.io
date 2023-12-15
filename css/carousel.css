@@ -7,23 +7,14 @@
   scrollbar-width: none; /* specific FF */
   -ms-overflow-style: none; /* specific IE/Edge */
   height: 100%;
-  max-width: 90dvw;
+  width: 100%;
 }
 .carousel-item {
   display: block;
   flex: 0 0 auto; /* fix size for items */
   scroll-snap-align: start; /* align to start */
   height: 100%;
-  max-width: 100%;
-}
-@media (min-width: 768px){
-  .carousel {
-	width: 75dvw;
-	height: 100%;
-  }
-  .carousel-item {
-    width: 75dvw;
-  }
+  width: 100%;
 }
 .carousel-item.active {
   display: block;
@@ -45,7 +36,7 @@
 }
 .carousel-text {
   margin-left: 10px;
-  padding: 20px;
+  padding: 0px;
 }
 .carousel-titleT h3 {
   color: #174C67;
@@ -75,15 +66,7 @@
   display: flex;
   justify-content: center;
 }
-
-.carousel-prev {
-  color: #F0F0F0;
-  background-color: transparent;
-  font-size: 30px;
-  margin: 10px;
-  cursor: pointer;
-  border-radius: 80%;
-}
+.carousel-prev,
 .carousel-next {
   color: #F0F0F0;
   background-color: transparent;
@@ -91,4 +74,6 @@
   margin: 10px;
   cursor: pointer;
   border-radius: 80%;
+  width: 45px;
+  height: 45px;
 }
