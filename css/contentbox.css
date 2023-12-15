@@ -1,10 +1,10 @@
 #career-content {
-  width: 100dvw;
-  height: 100dvh;
+  width: 100vw;
+  height: 100vh;
   display: none;
 }
 #career-content.active {
-  width: 100dvw;
+  width: 100vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -12,13 +12,13 @@
   align-items: center;
 }
 #contact-content {
-  width: 100dvw;
+  width: 100vw;
   height: 100%;
   text-align: center;
   display: none;
 }
 #contact-content.active {
-  width: 100dvw;
+  width: 100vw;
   height: 100%;
   text-align: center;
   display: flex;
@@ -27,13 +27,13 @@
   align-items: center;
 }
 #skills-content {
-  width: 100dvw;
-  height: 100dvh;
+  width: 100vw;
+  height: 100vh;
   text-align: center;
   display: none;
 }
 #skills-content.active {
-  width: 100dvw;
+  width: 100vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100dvh;
+  height: 100vh;
   overflow: hidden;
 }
 .content {
