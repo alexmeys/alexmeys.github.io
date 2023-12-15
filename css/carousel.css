@@ -6,13 +6,7 @@
   -webkit-overflow-scrolling: touch; /* smooth iOS */
   scrollbar-width: none; /* specific FF */
   -ms-overflow-style: none; /* specific IE/Edge */
-  border: 2px solid #000;
-  border-radius: 8px;
-  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
-  background-color: #333;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  min-height: 75%;
+  height: 100%;
   max-width: 90dvw;
 }
 .carousel-item {
@@ -25,7 +19,7 @@
 @media (min-width: 768px){
   .carousel {
 	width: 75dvw;
-	height: 75%;
+	height: 100%;
   }
   .carousel-item {
     width: 75dvw;
@@ -80,14 +74,20 @@
 .carousel-navigation {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
-.carousel-prev,
+.carousel-prev {
+  color: #F0F0F0;
+  background-color: transparent;
+  font-size: 30px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 80%;
+}
 .carousel-next {
   color: #F0F0F0;
   background-color: transparent;
-  font-size: 35px;
+  font-size: 30px;
   margin: 10px;
   cursor: pointer;
   border-radius: 80%;

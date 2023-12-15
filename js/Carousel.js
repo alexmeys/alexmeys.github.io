@@ -93,17 +93,21 @@ function populateCarousel(containerId, data) {
 
 function showNext() {
   const carousel = document.querySelector('.carousel');
-  carousel.scrollBy({
-    left: carousel.offsetWidth,
-    behavior: 'smooth'
+  const offsetWidth = carousel.offsetWidth;
+  carousel.scrollTo({
+    left: carousel.scrollLeft + offsetWidth,
+    top: 0,
+    behavior: 'smooth',
   });
 }
 
 function showPrevious() {
   const carousel = document.querySelector('.carousel');
-  carousel.scrollBy({
-    left: -carousel.offsetWidth,
-    behavior: 'smooth'
+  const offsetWidth = carousel.offsetWidth;
+  carousel.scrollTo({
+    left: carousel.scrollLeft - offsetWidth,
+    top: 0,
+    behavior: 'smooth',
   });
 }
 
