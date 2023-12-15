@@ -1,0 +1,23 @@
+[
+  {
+    "Function": "Func 1 PL",
+    "datestart": "January 2022",
+    "dateend": "present",
+    "CompanyName": "ABC Company",
+    "Story": "czesc, co u ciebie?"
+  },
+  {
+    "Function": "Func 2 PL",
+    "datestart": "January 2020",
+    "dateend": "December 2022",
+    "CompanyName": "ABC Company",
+    "Story": "nigdzie"
+  },
+  {
+    "Function": "PC Repair & Servicedesk",
+    "datestart": "January 2018",
+    "dateend": "December 2020",
+    "CompanyName": "ABC Company",
+    "Story": "do zobaczenia"
+  }
+]

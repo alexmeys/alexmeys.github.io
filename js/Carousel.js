@@ -1,21 +1,23 @@
 // Function to load career data based on language
 function loadCareerData(language) {
+  console.log('Loading career data for language:', language);
   const languageToFileName = {
-    en: 'careerD_US.json',
+    en: 'careerD_EN.json',
     nl: 'careerD_NL.json',
-    
+    fr: 'careerD_FR.json',
+    pl: 'careerD_PL.json',
   };
 
-  const fileName = languageToFileName[language];
+  const fileName = languageToFileName[language] || 'careerD_EN.json';
 
   if (!fileName) {
-    console.error('Language not supported');
     return;
   }
 
-  fetch(`./tl/${fileName}`)
+  fetch(`./tl/career/${fileName}`)
     .then(response => response.json())
     .then(data => {
+      console.log('Data received:', data);
       populateCarousel('career-content', data);
     })
     .catch(error => {
@@ -23,14 +25,14 @@ function loadCareerData(language) {
     });
 }
 
-// Function to handle language change based on flag click or hover
-function changeLanguage(language) {
-  loadCareerData(language);
-}
 
-// Updated populateCarousel function
+
+// Updated populateCarousel function (get, clear, put data in container for HTML)
 function populateCarousel(containerId, data) {
+  console.log('Populate', containerId);
   const carousel = document.querySelector(`#${containerId} .carousel`);
+  // clean out the array, previous stuff be gone :-)
+  carousel.innerHTML = '';
 
   data.forEach((item, index) => {
     const carouselItem = document.createElement('div');
@@ -61,6 +63,8 @@ function populateCarousel(containerId, data) {
     carouselItem.innerHTML = contentHTML;
     carousel.appendChild(carouselItem);
 
+
+    // If old job, color grey(er) if current job, make brighter
     const infoDate = carouselItem.querySelector('.carousel-info p:nth-child(1)');
     const infoText = carouselItem.querySelector('.carousel-info p:nth-child(2)');
     const infoStory = carouselItem.querySelector('.carousel-story p:nth-child(1)');
@@ -99,5 +103,26 @@ function populateCarousel(containerId, data) {
   }
 }
 
-// Call the loadCareerData function with the desired language
-loadCareerData('en'); // Default language, -> from browser invoegen
+// Function to handle language change based on flag click or hover (see FlagChange.js)
+function changeLanguage(language) {
+  loadCareerData(language);
+  LanguageHandler.changeLanguage(language);
+}
+
+LanguageHandler.attachFlagHandlers({
+  flagHandlers: {
+    flagBE: 'nl',
+    flagFR: 'fr',
+    flagEN: 'en',
+    flagPL: 'pl',
+  },
+  changeFunction: changeLanguage,
+});
+
+LanguageHandler.initialize(loadCareerData);
+
+// Set Default language
+loadCareerData('fr');
+
+// Export changeLanguage function
+window.changeLanguage = changeLanguage;

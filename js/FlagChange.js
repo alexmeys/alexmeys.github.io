@@ -1,68 +1,47 @@
-// Get references to the flags, language text, and the button element
+// Get 'em flags
 const flagBE = document.getElementById('flagBE');
 const flagFR = document.getElementById('flagFR');
 const flagEN = document.getElementById('flagEN');
 const flagPL = document.getElementById('flagPL');
 const languageText = document.getElementById('languageText');
-const lowerButton = document.querySelector('.lower-btn');
 
-//  Configure default stuff on hover
-let lastHoveredText = "Systems | Networks | Analysis | Design";
+// set the languages
+const flagHandlers = {
+  flagBE: 'nl',
+  flagFR: 'fr',
+  flagEN: 'en',
+  flagPL: 'pl',
+};
 
-// Function to on flag hover, change text (and lower-btn)
-function changeTextOnHover(text, language) {
+
+// change on hoverflag
+function changeTextOnHover(text) {
+  console.log('Text received in FlagChange.js:', text);
   languageText.textContent = text;
-  lastHoveredText = text;
 
   // Trigger the language change based on the text of the flag
-  let langCode;
-  switch (text) {
-    case 'Systemen | Netwerken | Analyseren | Ontwerpen':
-      langCode = 'nl'; // Assuming this is Dutch
-      break;
-    case 'Systèmes | Réseaux | Analyse | Conception':
-      langCode = 'fr'; // French
-      break;
-    case 'Systems | Networks | Analysis | Design':
-      langCode = 'en'; // English
-      break;
-    case 'Systemy | Sieci | Analiza | Projekt':
-      langCode = 'pl'; // Polish
-      break;
-    default:
-      langCode = 'en'; // Set default language if not matched
-      break;
-  }
-
-  // Call the function to load data for the selected language
-  changeLanguage(langCode);
+  LanguageHandler.changeLanguageByText(text);
+  console.log('send fromFlagChnage.js end: ', text);
 }
+
 
 // Actions set on change
 flagBE.addEventListener('mouseover', () => {
     changeTextOnHover('Systemen | Netwerken | Analyseren | Ontwerpen');
+	console.log('Flag BE Hovered');
 });
 
 flagFR.addEventListener('mouseover', () => {
     changeTextOnHover('Systèmes | Réseaux | Analyse | Conception');
+	console.log('Flag FR Hovered');
 });
 
 flagEN.addEventListener('mouseover', () => {
     changeTextOnHover('Systems | Networks | Analysis | Design');
+	console.log('Flag EN Hovered');
 });
 
 flagPL.addEventListener('mouseover', () => {
     changeTextOnHover('Systemy | Sieci | Analiza | Projekt');
-});
-
-// Default sets & lower-btn
-languageText.textContent = lastHoveredText;
-lowerButton.textContent = 'Continue'; 
-
-// Retain hovered text
-const allFlags = [flagBE, flagFR, flagEN, flagPL];
-allFlags.forEach(flag => {
-    flag.addEventListener('mouseout', () => {
-        languageText.textContent = lastHoveredText;
-    });
+	console.log('Flag PL Hovered');
 });
