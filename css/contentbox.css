@@ -59,6 +59,12 @@
   letter-spacing: 2px;
   font-size: 20px;
 }
+@media (max-width: 768px){
+  .transparent-btn {
+	font-size: 17px;
+	letter-spacing: 1.5px;
+  }
+}
 .transparent-btn.active {
   color: #F0F0F0;
   border-bottom: 2px solid #F0F0F0;
