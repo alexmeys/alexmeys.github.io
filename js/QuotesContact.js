@@ -21,7 +21,7 @@ function loadQuotes(language) {
 
 // Updates Quotes
 function updateQuotes(quotesData) {
-  const quotesContainer = document.getElementById('quotesText');
+  const quotesContainer = document.querySelector('.quotes');
   quotesContainer.innerHTML = '';
 
   quotesData.forEach(quote => {
@@ -31,19 +31,7 @@ function updateQuotes(quotesData) {
   });
 }
 
-// Change Language (Engine)
-function changeLanguage(language) {
-  LanguageHandler.changeLanguage(language);
+// Change Language for Quotes
+function changeQuotesLanguage(language) {
+  loadQuotes(language);
 }
-
-LanguageHandler.attachFlagHandlers({
-  flagHandlers: {
-    flagBE: 'nl',
-    flagFR: 'fr',
-    flagEN: 'en',
-    flagPL: 'pl',
-  },
-  changeFunction: changeLanguage,
-});
-
-LanguageHandler.initialize(loadQuotes);

@@ -1,23 +1,22 @@
 // Function to load career data based on language
 function loadCareerData(language) {
-  console.log('Loading career data for language:', language);
   const languageToFileName = {
     en: 'careerD_EN.json',
     nl: 'careerD_NL.json',
     fr: 'careerD_FR.json',
-    pl: 'careerD_PL.json',
+	pl: 'careerD_PL.json',
   };
 
-  const fileName = languageToFileName[language] || 'careerD_EN.json';
+  const fileName = languageToFileName[language];
 
   if (!fileName) {
+    console.error('Language not supported');
     return;
   }
 
   fetch(`./tl/career/${fileName}`)
     .then(response => response.json())
     .then(data => {
-      console.log('Data received:', data);
       populateCarousel('career-content', data);
     })
     .catch(error => {
@@ -25,13 +24,15 @@ function loadCareerData(language) {
     });
 }
 
+// Function to handle language change based on flag click or hover
+function changeCareerLanguage(language) {
+  loadCareerData(language);
+}
 
-
-// Updated populateCarousel function (get, clear, put data in container for HTML)
+// Updated populateCarousel function
 function populateCarousel(containerId, data) {
-  console.log('Populate', containerId);
   const carousel = document.querySelector(`#${containerId} .carousel`);
-  // clean out the array, previous stuff be gone :-)
+  
   carousel.innerHTML = '';
 
   data.forEach((item, index) => {
@@ -55,7 +56,6 @@ function populateCarousel(containerId, data) {
           <div class="carousel-story">
             <p>${item.Story}</p>
           </div>
-          <span class="carousel-mark">${index + 1}/${data.length}</span>
         </div>
       </div>
     `;
@@ -63,8 +63,6 @@ function populateCarousel(containerId, data) {
     carouselItem.innerHTML = contentHTML;
     carousel.appendChild(carouselItem);
 
-
-    // If old job, color grey(er) if current job, make brighter
     const infoDate = carouselItem.querySelector('.carousel-info p:nth-child(1)');
     const infoText = carouselItem.querySelector('.carousel-info p:nth-child(2)');
     const infoStory = carouselItem.querySelector('.carousel-story p:nth-child(1)');
@@ -91,38 +89,23 @@ function populateCarousel(containerId, data) {
       }
     });
   }
-
-  function showNext() {
-    currentIndex = (currentIndex + 1) % items.length;
-    showItem(currentIndex);
-  }
-
-  function showPrevious() {
-    currentIndex = (currentIndex - 1 + items.length) % items.length;
-    showItem(currentIndex);
-  }
 }
 
-// Function to handle language change based on flag click or hover (see FlagChange.js)
-function changeLanguage(language) {
-  loadCareerData(language);
-  LanguageHandler.changeLanguage(language);
+function showNext() {
+  const carousel = document.querySelector('.carousel');
+  carousel.scrollBy({
+    left: carousel.offsetWidth,
+    behavior: 'smooth'
+  });
 }
 
-LanguageHandler.attachFlagHandlers({
-  flagHandlers: {
-    flagBE: 'nl',
-    flagFR: 'fr',
-    flagEN: 'en',
-    flagPL: 'pl',
-  },
-  changeFunction: changeLanguage,
-});
+function showPrevious() {
+  const carousel = document.querySelector('.carousel');
+  carousel.scrollBy({
+    left: -carousel.offsetWidth,
+    behavior: 'smooth'
+  });
+}
 
-LanguageHandler.initialize(loadCareerData);
-
-// Set Default language
-loadCareerData('fr');
-
-// Export changeLanguage function
-window.changeLanguage = changeLanguage;
+// Call the loadCareerData function with the desired language
+loadCareerData('en'); // Default language, -> from browser invoegen

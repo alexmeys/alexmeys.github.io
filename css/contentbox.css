@@ -1,28 +1,16 @@
 #career-content {
-  width: 90dvw;
+  width: 100dvw;
   height: 100dvh;
   display: none;
 }
 #career-content.active {
-  width: 90dvw;
+  width: 100dvw;
   text-align: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow-x: auto; 
-}
-@media (min-width: 1000px){
-  #career-content.active {
-    width: 75dvw;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow-x: auto;
-  }
 }
 #contact-content {
   width: 90dvw;
@@ -80,6 +68,7 @@
 }
 .content {
   display: none;
+  position: relative;
 }
 .content.active {
   display: block;

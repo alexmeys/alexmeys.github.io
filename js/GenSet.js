@@ -2,24 +2,21 @@ function imgError(image) {
     image.style.display = 'none'; // Hide the image when it fails to load
 }
 
-function detectBrowserLanguage() {
-  const userLanguage = navigator.language || navigator.userLanguage;
 
-  // mapping languages
-  const languageMap = {
-    'en': 'careerD_US.json',
-    'nl': 'careerD_NL.json',
-    'fr': 'careerD_FR.json',
-	'pl': 'careerD_PL.json',
-  };
+function detectUserLanguage() {
+  const userLanguage = navigator.language.substring(0, 2); // ISO Lang code
 
-  // Get the language from browser, split, set in var or default Eng
-  const languageCode = userLanguage.split('-')[0];
-  const fileName = languageMap[languageCode] || 'careerD_US.json';
+  // Langs I support
+  const supportedLanguages = ['en', 'nl', 'fr', 'pl'];
 
-  // Load data based on the detected language
-  loadCareerData(languageCode);
+  // Check if the user's language is supported, default to 'en' otherwise
+  const defaultLanguage = supportedLanguages.includes(userLanguage) ? userLanguage : 'en';
+
+  // Set detected default lang
+  return defaultLanguage;
 }
+defLang = detectUserLanguage();
 
-// Call the function to detect browser language and load data
-detectBrowserLanguage();
+changeCareerLanguage(defLang);
+changeQuotesLanguage(defLang);
+changeMenusLanguage(defLang);

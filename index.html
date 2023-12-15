@@ -17,9 +17,16 @@
 	<link rel="stylesheet" href="./css/contentbox.css">
 	<link rel="stylesheet" href="./css/carousel.css">
 	<link rel="icon" type="image/x-icon" href="./pictures/meta/fav.png">
-	<script src="./js/LanguageHandler.js"></script>
 	</head>
 <body>
+  <noscript>
+    <div style="padding: 10px; background-color: #f8d7da; color: #721c24; text-align: center;">
+	  <p>🕵️‍♂️🔍 </p>
+      <p>Hey, how’s it going? Looks like someone’s hiding - yep, Javascript’s playing hide and seek here. This place kinda needs it to function properly.<br />
+      Otherwise you will not see much on this site. Not to worry, it’s all hosted right here, not flying off to some remote corners of the internet.</p>
+	  <p>So, if you could do me a solid and turn it on, You'll have a blast exploring my site! Thanks a bunch, and may your day be as awesome as you are.</p> <p>Take care, Alex 😉</p>
+    </div>
+  </noscript>
   <div id="container">
 	<div class="menu-holder">
 	  <div class="menu-toggle">
@@ -63,11 +70,17 @@
 		  <div id="career-content" class="content">
 		    <div class="carousel">
 		    </div>
+			<div class="carousel-navigation">
+			  <button class="carousel-prev" onclick="showPrevious()">&#x2B05;</button>
+			  <button class="carousel-next" onclick="showNext()">&#x27A1;</button>
+			</div>
 		  </div>
 		  <div id="skills-content" class="content">
 		  </div>
 		  <div id="contact-content" class="content">
-		    <div class="quotes" id="quotesText"><p>Fluent in Geek, Fluent in Speak—bridging worlds, one word at a time!</p></div>
+		    <div class="quotes">
+		      <p>Fluent in Geek, Fluent in Speak—bridging worlds, one word at a time!</p>
+		    </div>
 		    <div class="mnu-soc">
 			  <ul class="icons">
 			    <li>
@@ -84,11 +97,13 @@
     </div>
   </div>
   <button class="scroll-to-top" onclick="scrollToTop()">&#x2B06;</button>
-  <script src="./js/FlagChange.js"></script>
+  
+  <script src="./js/DefaultMenus.js"></script>
   <script src="./js/Carousel.js"></script>
   <script src="./js/QuotesContact.js"></script>
-  <script src="./js/GenSet.js"></script>
   <script src="./js/OverlayMenu.js"></script>
+  <script src="./js/GenSet.js"></script>
   <script src="./js/ContentBox.js"></script>
+  <script src="./js/FlagChange.js"></script>
 </body>
 </html>
