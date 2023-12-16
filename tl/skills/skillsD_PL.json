@@ -1,0 +1,7 @@
+{
+  "Systemy": ["PsysSK1", "sysSK2", "sysSK3"],
+  "Sieci": ["PnetSK1", "netSK2", "netSK3", "netSK4", "netSK5"],
+  "Analiza": ["PanaSK1", "anaSK2"],
+  "Projekt": ["PdesSK1", "desSK2", "desSK3", "desSK4"],
+  "Inne": ["PassSK1"]
+}

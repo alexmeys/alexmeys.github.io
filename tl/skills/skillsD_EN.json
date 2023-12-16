@@ -1,0 +1,7 @@
+{
+  "System": ["EsysSK1", "sysSK2", "sysSK3"],
+  "Network": ["EnetSK1", "netSK2", "netSK3", "netSK4", "netSK5"],
+  "Analytics": ["EanaSK1", "anaSK2"],
+  "Design": ["EdesSK1", "desSK2", "desSK3", "desSK4"],
+  "Assorted": ["EassSK1"]
+}

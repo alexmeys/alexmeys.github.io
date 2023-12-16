@@ -20,9 +20,10 @@ function detectUserLanguage() {
 defLang = detectUserLanguage();
 
 // Set info on first visit in lang detected
-changeCareerLanguage(defLang);
+changeCareersLanguage(defLang);
 changeQuotesLanguage(defLang);
 changeMenusLanguage(defLang);
+changeSkillsLanguage(defLang);
 
 // Open Career section by default
 document.addEventListener('DOMContentLoaded', function() {
@@ -40,7 +41,7 @@ let lastScrollPosition = 0;
 
 window.addEventListener('scroll', function() {
   const buttonContainer = document.querySelector('.button-container');
-  const scrollThreshold = window.innerHeight * 0.74; // 74% viewport
+  const scrollThreshold = window.innerHeight * 0.55; // 55% viewport
 
   const scrollPosition = window.scrollY;
 

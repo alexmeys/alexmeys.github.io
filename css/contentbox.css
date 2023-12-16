@@ -1,24 +1,26 @@
 #career-content {
-  width: 100vw;
-  height: 100vh;
+  width: 100lvw;
+  height: 100lvh;
+  text-align: center;
   display: none;
 }
 #career-content.active {
-  width: 100vw;
+  width: 100lvw;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 #contact-content {
-  width: 100vw;
+  width: 100lvw;
   height: 100%;
   text-align: center;
   display: none;
 }
 #contact-content.active {
-  width: 100vw;
+  width: 100lvw;
   height: 100%;
   text-align: center;
   display: flex;
@@ -27,13 +29,13 @@
   align-items: center;
 }
 #skills-content {
-  width: 100vw;
-  height: 100vh;
+  width: 100lvw;
+  height: 100lvh;
   text-align: center;
   display: none;
 }
 #skills-content.active {
-  width: 100vw;
+  width: 100lvw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -63,15 +65,15 @@
   }
 }
 .transparent-btn.active {
-  color: #F0F0F0;
-  border-bottom: 2px solid #F0F0F0;
+  color: var(--main-font-color);
+  border-bottom: 2px solid var(--main-font-color);
   border-radius: 24%;
 }
 .content-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 100lvh;
   overflow: hidden;
 }
 .content {
@@ -80,4 +82,15 @@
 }
 .content.active {
   display: block;
+}
+.old-job p {
+  color: #000;
+}
+@keyframes fadeInStuff {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

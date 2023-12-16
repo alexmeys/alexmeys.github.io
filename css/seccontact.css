@@ -1,0 +1,22 @@
+.contact-wrapper {
+  width: 77lvw;
+  height: 77lvh;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--box-color);
+}
+
+.quotes {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  color: var(--main-font-color);
+  font-size: 23px;
+  animation: fadeInStuff 1.2s ease-in-out forwards;
+}

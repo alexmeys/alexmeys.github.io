@@ -15,8 +15,11 @@
 	<link rel="stylesheet" href="./css/overlay.css">
 	<link rel="stylesheet" href="./css/interact.css">
 	<link rel="stylesheet" href="./css/contentbox.css">
-	<link rel="stylesheet" href="./css/carousel.css">
+	<link rel="stylesheet" href="./css/seccareers.css">
 	<link rel="stylesheet" href="./css/secskills.css">
+	<link rel="stylesheet" href="./css/seccontact.css">
+	<link rel="stylesheet" href="./css/changecolor.css">
+	<script src="./js/ChangeColor.js"></script>
 	<link rel="icon" type="image/x-icon" href="./pictures/meta/fav.png">
 	</head>
 <body>
@@ -38,9 +41,13 @@
 	  <div class="close-btn"></div>
 	  <ul class="overlay-menu">
 		<li><a href="#home">Alex Meys © 2023</a></li>
+		<li>
+		  <button class="left-Tbutton" onclick="setLightTheme()">&#x1f4a1;</button>
+		  <button class="right-Tbutton" onclick="setDarkTheme()">&#x1f4a1;</button>
+	    </li>
 	  </ul>
 	</div>
-    <div id="home" class="section first-section">
+    <div class="section first-section">
 	  <div class="home-wrapper">
 	    <div class="header-content">
 	      <div class="menu-lang">
@@ -71,28 +78,33 @@
 		    <button class="transparent-btn" id="contact-btn" data-content="contact-content" onclick="showContent('contact-content')"></button>
 		  </div>
 		  <div id="career-content" class="content">
-		    <div class="career-wrapper">
-		      <div class="carousel">
-		      </div>
-			  <div class="carousel-navigation">
-			    <button class="carousel-prev" onclick="showPrevious()">&#x2190;</button>
-			    <button class="carousel-next" onclick="showNext()">&#x2192;</button>
+		    <div class="careers-wrapper">
+			  <div class="careers-cont">
+				<p></p>
+			  </div>
+			  <div class="careers-row">
+				<div class="careers-tog">
+				  <button class="careers-prev" onclick="navigateCareers(-1)">&#x2190;</button>
+				  <p></p>
+				  <button class="careers-next" onclick="navigateCareers(1)">&#x2192;</button>
+				</div>
 			  </div>
 			</div>
 		  </div>
 		  <div id="skills-content" class="content">
 		    <div class="skills-wrapper">
-			  <div class="skills-sys">
-			  <p>System</p>
+			  <div class="skills-title">
 			  </div>
-			  <div class="skills-net">
-			  <p>Network</p>
+			  <div class="skills-cont">
+			    <div class="column" id="skclm1"></div>
+				<div class="column" id="skclm2"></div>
 			  </div>
-			  <div class="skills-ana">
-			  <p>Analytics</p>
-			  </div>
-			  <div class="skills-des">
-			  <p>Design</p>
+			  <div class="skills-row">
+				<div class="skills-tog">
+				  <button class="skills-prev" onclick="navigateSkills(-1)">&#x2190;</button>
+				  <p></p>
+				  <button class="skills-next" onclick="navigateSkills(1)">&#x2192;</button>
+				</div>
 			  </div>
 			</div>
 		  </div>
@@ -107,7 +119,7 @@
 				    <a href="https://linkedin.com/in/alex-meys" title="Linkedin" target="_blank"><img src="./pictures/meta/lkdn.png" onerror="imgError(this);"></a>
 			      </li>
 			      <li>
-				    <a href="https://github.com/alexmeys" title="Github" target="_blank"><img src="./pictures/meta/gthb.png" onerror="imgError(this);"></a> 
+				    <a href="https://github.com/alexmeys" id="ghpic" title="Github" target="_blank"><img src="./pictures/meta/gthbD.png" onerror="imgError(this);"></a> 
 			      </li>
 			    </ul>
 		      </div>
@@ -117,11 +129,10 @@
 	  </div>
     </div>
   </div>
-  <button class="scroll-to-top" onclick="scrollToTop()">&#x2B06;</button>
-  
   <script src="./js/DefaultMenus.js"></script>
-  <script src="./js/Carousel.js"></script>
+  <script src="./js/ItemCareers.js"></script>
   <script src="./js/QuotesContact.js"></script>
+  <script src="./js/ItemSkills.js"></script>
   <script src="./js/OverlayMenu.js"></script>
   <script src="./js/GenSet.js"></script>
   <script src="./js/ContentBox.js"></script>

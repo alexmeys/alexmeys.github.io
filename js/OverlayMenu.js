@@ -53,20 +53,3 @@ overlayLinks.forEach(function (link) {
   });
 });
 
-// Scroll top, smooth
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
-
-// Show/hide scroll-to-top button based on scroll position
-window.addEventListener('scroll', function() {
-  var scrollButton = document.querySelector('.scroll-to-top');
-  if (window.scrollY > 300) {
-    scrollButton.classList.add('active');
-  } else {
-    scrollButton.classList.remove('active');
-  }
-});

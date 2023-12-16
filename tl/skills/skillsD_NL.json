@@ -1,0 +1,7 @@
+{
+  "Systeem": ["NsysSK1", "sysSK2", "sysSK3"],
+  "Netwerk": ["NnetSK1", "netSK2", "netSK3", "netSK4", "netSK5"],
+  "Analyse": ["NanaSK1", "anaSK2"],
+  "Ontwerp": ["NdesSK1", "desSK2", "desSK3", "desSK4"],
+  "Andere": ["NassSK1"]
+}

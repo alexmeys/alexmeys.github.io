@@ -30,9 +30,10 @@ function changeTextOnHover(text) {
 	}
 
 	// Call the function to load data for the selected language
-	changeCareerLanguage(langCode);
+	changeCareersLanguage(langCode);
 	changeQuotesLanguage(langCode);
 	changeMenusLanguage(langCode);
+	changeSkillsLanguage(langCode);
 }
 
 // Actions set on change

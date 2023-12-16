@@ -8,7 +8,7 @@
   margin: 0;
   width: 100dvw;
   height: 100dvh;
-  background-color: rgba(46, 46, 46, 0.995);
+  background-color: var(--overlay-color);
   z-index: 1000;
   overflow-y: auto;
   list-style: none;
@@ -29,13 +29,17 @@
 }
 .overlay-menu a {
   font-family: 'Lato', cursive;
-  color: #F0F0F0;
+  color: var(--main-font-color);
   text-decoration: none;
   display: block;
-  line-height: 100dvh;
+  line-height: 90svh;
 }
 .overlay-menu li a:hover{
-  color: #174C67;
+  color: var(--secondary-color);
+}
+.overlay-menu button {
+  color: red;
+  line-height: 3svh;
 }
 .overlay-menu.active {
   display: block;

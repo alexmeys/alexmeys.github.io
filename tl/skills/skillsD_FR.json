@@ -1,0 +1,7 @@
+{
+  "Systèmes": ["FsysSK1", "sysSK2", "sysSK3"],
+  "Réseaux": ["FnetSK1", "netSK2", "netSK3", "netSK4", "netSK5"],
+  "Analyse": ["FanaSK1", "anaSK2"],
+  "Conception": ["FdesSK1", "desSK2", "desSK3", "desSK4"],
+  "Autre": ["FassSK1"]
+}
