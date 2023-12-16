@@ -220,7 +220,7 @@ h4.lato {
 
 /* First Section */
 .first-section {
-  height: 100vh;
+  height: 100svh;
   position: relative;
   text-align: center;
 }
@@ -258,25 +258,6 @@ h4.lato {
 .menu-lang img:hover {
   filter: grayscale(0%);
   transform: scale(1.5);
-}
-
-/* social menu */
-.mnu-soc ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-.mnu-soc li {
-  margin-left: 10px;
-}
-.mnu-soc li a {
-  display: block;
-  width: 60px;
-  height: auto;
-}
-.mnu-soc li a img {
-  max-width: 100%;
 }
 .left-Tbutton,
 .right-Tbutton {

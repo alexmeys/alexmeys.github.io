@@ -12,11 +12,53 @@
   box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
   background-color: var(--box-color);
 }
-
 .quotes {
   font-family: 'Georgia', serif;
   font-style: italic;
   color: var(--main-font-color);
   font-size: 23px;
   animation: fadeInStuff 1.2s ease-in-out forwards;
+}
+
+/* social menu */
+.mnu-soc ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.mnu-soc li {
+  margin: 0;
+}
+.mnu-soc li a {
+  display: block;
+  width: 60px;
+  height: auto;
+}
+.mnu-soc li a img {
+  max-width: 100%;
+  animation: wiggle 2.5s linear 5;
+}
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-20deg);
+  }
+  20% {
+    transform: rotateZ(20deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(16deg);
+  }
+  35% {
+    transform: rotateZ(-14deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
 }
