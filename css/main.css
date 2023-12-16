@@ -82,7 +82,7 @@ header {
   position: relative;
   text-align: center;
   width: 100%;
-  height: 100svh;
+  height: 100lvh;
 }
 .home-wrapper {
   width: 77svw;
@@ -220,7 +220,7 @@ h4.lato {
 
 /* First Section */
 .first-section {
-  height: 100svh;
+  height: 100lvh;
   position: relative;
   text-align: center;
 }
