@@ -1,18 +1,15 @@
 .careers-wrapper {
-  width: 77lvw;
-  height: 77lvh;
-  margin: 0 auto;
-  padding: 20px;
+  width: 77%;
+  height: 77%;
+  margin-top: 5%;
+  padding: 1.5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 2px solid #000;
   border-radius: 8px;
-  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
   background-color: var(--box-color);
-  display: flex;
-  flex-direction: column;
 }
 .careers-row {
   display: flex;
@@ -22,7 +19,7 @@
   margin: 0;
   text-align: center;
   align-self: flex-start;
-  padding: 5px;
+  padding: 0.5%;
   flex: 0 1 auto;
   width: 100%;
 }
@@ -33,12 +30,10 @@
   flex: 1;
   width: 95%;
   overflow-y: auto;
-  scrollbar-width: none;
+  -ms-overflow-style: none; /* specific IE/Edge */
   text-align: left;
   scroll-snap-type: x mandatory; /* Snap items to position */
-  -webkit-overflow-scrolling: touch; /* smooth iOS */
-  scrollbar-width: none; /* specific FF */
-  -ms-overflow-style: none; /* specific IE/Edge */
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
 }
@@ -56,11 +51,6 @@
   border: none;
   padding: 0;
   appearance: none;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 27px;
-  width: 60px;
-  height: 40px;
 }
 .function-item p {
   color: var(--secondary-color);

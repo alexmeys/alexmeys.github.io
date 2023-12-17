@@ -6,7 +6,7 @@
 }
 
 /* body styles */
-body {
+html,body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
   background-color: var(--main-bg-color);
@@ -15,7 +15,12 @@ body {
   padding: 0;
   font-size: 17px;
   line-height: 27px;
-
+  height: 100%;
+  width: 100%;
+}
+#container {
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 767px) {
   .body p {
@@ -70,6 +75,8 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 .section p {
   color: var(--main-font-color);
@@ -82,26 +89,26 @@ header {
   position: relative;
   text-align: center;
   width: 100%;
-  height: 100svh;
+  height: 100%;
 }
 .home-wrapper {
-  width: 77svw;
-  height: 77svh;
+  width: 77%;
+  height: 77%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1.5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 2px solid #000;
   border-radius: 8px;
-  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
   background-color: var(--box-color);
 }
 h4.lato {
   font-size: 28px;
   color: var(--main-font-color);
   letter-spacing: 3px;
+  margin-top: 3%;
 }
 .header-content {
   position: relative;
@@ -220,7 +227,8 @@ h4.lato {
 
 /* First Section */
 .first-section {
-  height: 100svh;
+  height: 100%;
+  width: 100%;
   position: relative;
   text-align: center;
 }
@@ -268,4 +276,12 @@ h4.lato {
 }
 .right-Tbutton {
   filter: grayscale(100%);
+}
+.boxes {
+    box-shadow:
+      1px 2px 2px hsl(220deg 80% 1% / 0.2),
+      2px 4px 4px hsl(220deg 80% 1% / 0.2),
+      4px 8px 8px hsl(220deg 80% 2% / 0.2),
+      8px 16px 16px hsl(220deg 80% 3% / 0.2),
+      16px 32px 32px hsl(220deg 80% 4% / 0.2);
 }

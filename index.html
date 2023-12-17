@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head>
 	<title>Alex Meys - IT Business Analyst, System & Network Engineer</title>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<meta name="description" content="Welcome to the website of an IT enthusiast and professional based in Belgium. With a passion for technology and a background in IT business analysis, system, and network engineering, I am dedicated to providing innovative solutions and insights to help businesses thrive in the digital age">
 	<meta name="keywords" content="IT Business Analyst, System Engineer, Network Engineer, Data Analysis, IT Solutions, Cloud Computing, Agile">
 	<meta name="author" content="Alex Meys">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
 	<meta name="revisit-after" content="7 days">
 	<meta name="author" content="Alex Meys">
@@ -32,23 +32,8 @@
     </div>
   </noscript>
   <div id="container">
-	<div class="menu-holder">
-	  <div class="menu-toggle">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-	  </div>
-	  <div class="close-btn"></div>
-	  <ul class="overlay-menu">
-		<li><a href="#home">Alex Meys © 2023</a></li>
-		<li>
-		  <button class="left-Tbutton" onclick="setLightTheme()">&#x1f4a1;</button>
-		  <button class="right-Tbutton" onclick="setDarkTheme()">&#x1f4a1;</button>
-	    </li>
-	  </ul>
-	</div>
     <div class="section first-section">
-	  <div class="home-wrapper">
+	  <div class="home-wrapper boxes">
 	    <div class="header-content">
 	      <div class="menu-lang">
 		    <img src="./pictures/flags/be.png" id="flagBE" onerror="imgError(this);">
@@ -62,9 +47,10 @@
 	  </div>
 	  <div class="button-container">
 	    <div class="btext">
-	      <button class="lower-btn"></button>
+		<a href="#filler" class="cleanlink">
+	      <button class="lower-btn"></button></a>
 		</div>
-		<div class="darrow">&#x2B07;
+		<div class="darrow"><a href="#filler" class="cleanlink">&#x2B07;</a>
 		</div>
 	  </div>
 	</div>
@@ -77,38 +63,38 @@
 		    <button class="transparent-btn" id="contact-btn" data-content="contact-content" onclick="showContent('contact-content')"></button>
 		  </div>
 		  <div id="career-content" class="content">
-		    <div class="careers-wrapper">
+		    <div class="careers-wrapper boxes">
 			  <div class="careers-cont">
 				<p></p>
 			  </div>
 			  <div class="careers-row">
 				<div class="careers-tog">
-				  <button class="careers-prev" onclick="navigateCareers(-1)">&#x2190;</button>
+				  <a href="#" class="careers-prev cleanlink" onclick="navigateCareers(-1)">&#x2190;</a>
 				  <p></p>
-				  <button class="careers-next" onclick="navigateCareers(1)">&#x2192;</button>
+				  <a href="#" class="careers-next cleanlink" onclick="navigateCareers(1)">&#x2192;</a>
 				</div>
 			  </div>
 			</div>
 		  </div>
 		  <div id="skills-content" class="content">
-		    <div class="skills-wrapper">
+		    <div class="skills-wrapper boxes">
 			  <div class="skills-title">
 			  </div>
 			  <div class="skills-cont">
-			    <div class="column" id="skclm1"></div>
-				<div class="column" id="skclm2"></div>
+			    <div class="column"></div>
+				<div class="column"></div>
 			  </div>
 			  <div class="skills-row">
 				<div class="skills-tog">
-				  <button class="skills-prev" onclick="navigateSkills(-1)">&#x2190;</button>
+				  <a href="#" class="skills-prev cleanlink" onclick="navigateSkills(-1)">&#x2190;</a>
 				  <p></p>
-				  <button class="skills-next" onclick="navigateSkills(1)">&#x2192;</button>
+				  <a href="#" class="skills-next cleanlink" onclick="navigateSkills(1)">&#x2192;</a>
 				</div>
 			  </div>
 			</div>
 		  </div>
 		  <div id="contact-content" class="content">
-		    <div class="contact-wrapper">
+		    <div class="contact-wrapper boxes">
 		      <div class="quotes">
 		        <p></p>
 		      </div>
@@ -120,6 +106,25 @@
 			    </ul>
 		      </div>
 			</div>
+		  </div>
+		  <div class="menu-holder">
+			<div class="menu-toggle">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+			</div>
+			<div class="close-btn"></div>
+			  <div class="overlay-menu">
+			    <div class="overlay-focus">
+				  <div class="overlay-me">
+				    <a href="#home" class="cleanlink">Alex Meys © 2023</a>
+				  </div>
+				  <div clas="overlay-theme">
+				    <button class="left-Tbutton" onclick="setLightTheme()">&#x1f4a1;</button>
+				    <button class="right-Tbutton" onclick="setDarkTheme()">&#x1f4a1;</button>
+				  </div>
+			    </div>
+			  </div>
 		  </div>
 	    </div>
 	  </div>

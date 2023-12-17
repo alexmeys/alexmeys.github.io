@@ -29,8 +29,8 @@
   width: 30px;
   padding: 5px;
   position: fixed;
-  top: 15px;
-  right: 10px;
+  bottom: 15px;
+  right: 20px;
   z-index: 1200;
   color: var(--secondary-color);
 }

@@ -6,10 +6,10 @@
   --overlay-color: rgba(46, 46, 46, 0.995);
 }
 .light-theme {
-  --main-bg-color: #F0F0F0;
+  --main-bg-color: #D3D3D3;
   --main-font-color: #2E2E2E;
   --secondary-color: #174C67;
-  --box-color: #D3D3D3;
+  --box-color: #F0F0F0;
   --overlay-color: rgba(240, 240, 240, 0.995);
 }
 .dark-theme {
