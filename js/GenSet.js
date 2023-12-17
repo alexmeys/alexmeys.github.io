@@ -25,6 +25,7 @@ changeQuotesLanguage(defLang);
 changeMenusLanguage(defLang);
 changeSkillsLanguage(defLang);
 
+
 // Open Career section by default
 document.addEventListener('DOMContentLoaded', function() {
   const openCareer = document.getElementById('career-btn');
@@ -41,7 +42,7 @@ let lastScrollPosition = 0;
 
 window.addEventListener('scroll', function() {
   const buttonContainer = document.querySelector('.button-container');
-  const scrollThreshold = window.innerHeight * 0.55; // 55% viewport
+  const scrollThreshold = window.innerHeight * 0.15; // 15% viewport
 
   const scrollPosition = window.scrollY;
 
