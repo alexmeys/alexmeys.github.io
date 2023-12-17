@@ -1,12 +1,12 @@
 #career-content {
   width: 100%;
-  min-height: 100dvh;
+  min-height: 100%;
   text-align: center;
   display: none;
 }
 #career-content.active {
   width: 100%;
-  min-height: 100dvh;
+  min-height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -16,13 +16,13 @@
 }
 #contact-content {
   width: 100%;
-  min-height: 100dvh;
+  min-height: 100%;
   text-align: center;
   display: none;
 }
 #contact-content.active {
   width: 100%;
-  min-height: 100dvh;
+  min-height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -31,13 +31,13 @@
 }
 #skills-content {
   width: 100%;
-  min-height: 100dvh;
+  min-height: 100%;
   text-align: center;
   display: none;
 }
 #skills-content.active {
   width: 100%;
-  min-height: 100dvh;
+  min-height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
