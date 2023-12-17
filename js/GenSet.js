@@ -38,22 +38,33 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // hide & show the scroll down 
+// ( firstContainer loading frames, temp disabled)
 let lastScrollPosition = 0;
 
 window.addEventListener('scroll', function() {
   const buttonContainer = document.querySelector('.button-container');
-  const scrollThreshold = window.innerHeight * 0.15; // 15% viewport
+  const fillerContainer = document.querySelector('.filler-sections');
+  //const firstContainer = document.querySelector('.home-wrapper');
+  
+  const scrollDownThreshold = window.innerHeight * 0.4; // 10% viewport for down scroll
+  const scrollUpThreshold = window.innerHeight * 0.3; // 80% viewport for scroll up
 
   const scrollPosition = window.scrollY;
 
-  if (scrollPosition > scrollThreshold) {
-    if (scrollPosition > lastScrollPosition) {
-      buttonContainer.style.display = 'none';
-    } else {
-      buttonContainer.style.display = 'block';
-    }
-  } else {
+  if (scrollPosition < scrollDownThreshold) {
     buttonContainer.style.display = 'block';
+	//firstContainer.style.display = 'flex';
+    fillerContainer.style.display = 'none';
+  } else {
+    if (scrollPosition > lastScrollPosition && scrollPosition > scrollDownThreshold) {
+      buttonContainer.style.display = 'none';
+	  //firstContainer.style.display = 'none';
+	  fillerContainer.style.display = 'block';
+    } else if (scrollPosition < scrollUpThreshold) {
+      buttonContainer.style.display = 'block';
+	  //firstContainer.style.display = 'flex';
+	  fillerContainer.style.display = 'block';
+    }
   }
 
   lastScrollPosition = scrollPosition;
