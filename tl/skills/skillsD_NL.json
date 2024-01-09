@@ -1,7 +1,7 @@
 {
-  "Systeem": ["NsysSK1", "sysSK2", "sysSK3"],
-  "Netwerk": ["NnetSK1", "netSK2", "netSK3", "netSK4", "netSK5"],
-  "Analyse": ["NanaSK1", "anaSK2"],
-  "Ontwerp": ["NdesSK1", "desSK2", "desSK3", "desSK4"],
-  "Andere": ["NassSK1"]
+  "Systeem & Netwerk": ["HPe", "Dell", "Nimble", "Nutanix", "vCenter Esx", "Hyper-V", "Windows Server", "Linux Server", "Intune", "Fortinet", "Watchguard", "Cisco ASA", "Aruba", "Meraki", "Darktrace", "EDR"],
+  "Persoonlijke vaardigheden": ["Analytisch vermogen", "Kritisch denken", "Volharding", "Servicegericht", "Zelfmotivatie", "Accuraat werken",  "Georganiseerd zijn", "Samenwerking"],
+  "Analyse & Scripting": ["PowerShell", "Perl", "Python", "SQL", "Html/css", "Golang", "PowerBI", "Access", "Excel"],
+  "Andere": ["Komt", "Nog"],
+  "Software": ["Veeam", "Synology", "FSLogix", "BitTitan", "Wireshark", "Postman", "Burp suite", "Avaya", "Autotask", "N-Able", "ITGlue", "DbFact"]
 }

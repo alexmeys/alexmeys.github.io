@@ -34,7 +34,7 @@ function updateCareers(categoryIndex) {
 
   const functionElement = document.createElement('div');
   functionElement.classList.add('function-item');
-  const functionP = document.createElement('p');
+  const functionP = document.createElement('h2');
   functionP.textContent = career.Function;
   functionElement.appendChild(functionP);
   careersCont.appendChild(functionElement);
@@ -55,9 +55,14 @@ function updateCareers(categoryIndex) {
 
   const storyElement = document.createElement('div');
   storyElement.classList.add('story-item');
-  const storyP = document.createElement('p');
-  storyP.textContent = career.Story;
-  storyElement.appendChild(storyP);
+  const sentences = career.Story.split('. ');
+  const ul = document.createElement('ul');
+  sentences.forEach(sentence => {
+    const li = document.createElement('li');
+    li.textContent = sentence;
+    ul.appendChild(li);
+  });
+  storyElement.appendChild(ul);
   careersCont.appendChild(storyElement);
 }
 

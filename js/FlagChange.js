@@ -12,16 +12,16 @@ function changeTextOnHover(text) {
 	// Trigger the language change based on the text of the flag
     let langCode;
     switch (text) {
-	  case 'Systemen | Netwerken | Analyseren | Ontwerpen':
+	  case 'Systemen | Netwerken | Analyseren':
 	    langCode = 'nl';
 	    break;
-	  case 'Systèmes | Réseaux | Analyse | Conception':
+	  case 'Systèmes | Réseaux | Analyse':
 	    langCode = 'fr';
 	    break;
-	  case 'Systems | Networks | Analysis | Design':
+	  case 'Systems | Networks | Analysis':
 	    langCode = 'en';
 	    break;
-	  case 'Systemy | Sieci | Analiza | Projekt':
+	  case 'Systemy | Sieci | Analiza':
 	    langCode = 'pl';
 	    break;
 	  default:
@@ -38,17 +38,17 @@ function changeTextOnHover(text) {
 
 // Actions set on change
 flagBE.addEventListener('mouseover', () => {
-    changeTextOnHover('Systemen | Netwerken | Analyseren | Ontwerpen');
+    changeTextOnHover('Systemen | Netwerken | Analyseren');
 });
 
 flagFR.addEventListener('mouseover', () => {
-    changeTextOnHover('Systèmes | Réseaux | Analyse | Conception');
+    changeTextOnHover('Systèmes | Réseaux | Analyse');
 });
 
 flagEN.addEventListener('mouseover', () => {
-    changeTextOnHover('Systems | Networks | Analysis | Design');
+    changeTextOnHover('Systems | Networks | Analysis');
 });
 
 flagPL.addEventListener('mouseover', () => {
-    changeTextOnHover('Systemy | Sieci | Analiza | Projekt');
+    changeTextOnHover('Systemy | Sieci | Analiza');
 });

@@ -1,23 +1,37 @@
 [
   {
-    "Function": "Func 1 PL",
-    "datestart": "January 2022",
-    "dateend": "present",
-    "CompanyName": "ABC Company",
-    "Story": "czesc, co u ciebie?"
+    "Function": "TBD",
+    "datestart": "Styczeń 2024 ",
+    "dateend": "Obecne stanowisko ",
+    "CompanyName": "Netflow IT ",
+    "Story": "TBD"
   },
   {
-    "Function": "Func 2 PL",
-    "datestart": "January 2020",
-    "dateend": "December 2022",
-    "CompanyName": "ABC Company",
-    "Story": "nigdzie"
+    "Function": "Inżynier Systemów",
+    "datestart": "Czerwiec 2016 ",
+    "dateend": "Lipiec 2020 ",
+    "CompanyName": "Netflow IT ",
+    "Story": "Główny nacisk tutaj jest głównie na wewnętrzne wsparcie dla kolegów. Utrzymanie oprogramowania i sprzętu.  Rozwiązywanie problemów technicznych na głębszym poziomie. Konfigurowanie zapór sieciowych i routerów. Zarządzanie środowiskami serwerów Windows. Zarządzanie środowiskami sieciowymi. Tworzenie skryptów do automatyzacji lub rozwiązywania powtarzających się problemów. Monitorowanie wydajności oraz dostosowywanie wszystkiego związanego z infrastrukturą sieciową i serwerami Windows. Zarządzanie kopiami zapasowymi. Prowadzenie dokumentacji technicznej i platform do zarządzania."
   },
   {
-    "Function": "PC Repair & Servicedesk",
-    "datestart": "January 2018",
-    "dateend": "December 2020",
-    "CompanyName": "ABC Company",
-    "Story": "do zobaczenia"
+    "Function": "Starszy Inżynier Systemów",
+    "datestart": "Lipiec 2020 ",
+    "dateend": "Obecne stanowisko ",
+    "CompanyName": "Netflow IT ",
+    "Story": "Ta rola jest kontynuacją poprzedniej, ale skupia się na klientach korporacyjnych. W firmie wyznaczony jako koordynator zespołu Ekspertów Sieci. Techniczne, dogłębne rozwiązywanie problemów z sieciami i systemami. Instalowanie i konfigurowanie zapór sieciowych. Zarządzanie środowiskami Intune. Utrzymanie infrastruktury serwerowej i sieciowej. Wdrażanie dostosowań związanych z bezpieczeństwem. Wspieranie kolegów. Współpraca z innymi działami w celu opracowania propozycji nowych implementacji. Opracowywanie dokumentacji i procedur."
+  },
+  {
+    "Function": "Naprawa Komputerów & Obsługa Helpdesku",
+    "datestart": "Czerwiec 2010 ",
+    "dateend": "Czerwiec 2012 ",
+    "CompanyName": "Netflow IT ",
+    "Story": "Pierwsze doświadczenia w świecie IT. Pierwsza linia wsparcia serwisowego. Naprawy różnego sprzętu. Naprawa różnego rodzaju sprzętu. Proaktywne aktualizowanie, utrzymywanie oprogramowania i dokumentacji."
+  },
+  {
+    "Function": "Administrator Systemu",
+    "datestart": "Czerwiec 2012 ",
+    "dateend": "Maj 2016 ",
+    "CompanyName": "Netflow IT ",
+    "Story": "Wdrażanie na miejscu sprzętu lub usług (drukarki, zapory sieciowe, serwery,...) w BeNeLuxie i Francji, w segmencie MŚP. Przeprowadzanie konserwacji IT na miejscu u klientów. W przypadku technicznych interwencji awaryjnych z eskalacji, wykonywanie napraw na miejscu. Ze względu na trend przejścia z On-Prem do Chmury, przeprowadziłem dużo migracji do Office 365."
   }
 ]

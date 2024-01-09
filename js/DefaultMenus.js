@@ -7,28 +7,28 @@ const languageText = document.getElementById('languageText');
 
 // array of data -> user filling menus
 const menusDataNL = [
-  { LBannerT: 'Systemen | Netwerken | Analyseren | Ontwerpen'},
+  { LBannerT: 'Systemen | Netwerken | Analyseren'},
   { lowerBT: 'Verder' },
   { careerBT: 'Loopbaan' },
   { skillsBT: 'Vaardigheden' },
   { contactBT: 'Contact' }
 ];
 const menusDataEN = [
-  { LBannerT: 'Systems | Networks | Analysis | Design'},
+  { LBannerT: 'Systems | Networks | Analysis'},
   { lowerBT: 'Continue' },
   { careerBT: 'Career' },
   { skillsBT: 'Skills' },
   { contactBT: 'Contact' }
 ];
 const menusDataFR = [
-  { LBannerT: 'Systèmes | Réseaux | Analyse | Conception'},
+  { LBannerT: 'Systèmes | Réseaux | Analyse'},
   { lowerBT: 'Continuer' },
   { careerBT: 'Carrière' },
   { skillsBT: 'Compétences' },
   { contactBT: 'Contact' }
 ];
 const menusDataPL = [
-  { LBannerT: 'Systemy | Sieci | Analiza | Projekt'},
+  { LBannerT: 'Systemy | Sieci | Analiza'},
   { lowerBT: 'Idź dalej' },
   { careerBT: 'Kariera' },
   { skillsBT: 'Umiejętności' },

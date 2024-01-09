@@ -1,31 +1,20 @@
-/* font styles */
-@font-face{
-  font-family: 'Lato';
-  src: url('../fonts/Lato-Regular.ttf') format('truetype'),
-       url('../fonts/Lato-Italic.ttf') format('truetype');
-}
-
 /* body styles */
 body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
+  font-size: var(--font-size-lg);
   background-color: var(--main-bg-color);
   color: var(--main-font-color);
+  letter-spacing: 1px;
   margin: 0;
   padding: 0;
-  font-size: 17px;
   line-height: 27px;
   width: 100%;
 }
 #container {
   width: 100%;
+  height: calc(100vh - 60px); /*Old browser support*/
   height: 100svh;
-}
-@media (max-width: 767px) {
-  .body p {
-	font-size: 16px;
-	line-height: 26px;
-  }
 }
 /* Overlay Navigation Styles */
 .bar, .nav {
@@ -81,13 +70,13 @@ header {
   color: var(--main-font-color);
   display: inline-block;
   white-space: normal;
-  overflow: hidden;
   text-align: left;
 }
 .filler-sections {
   position: relative;
   text-align: center;
   width: 100%;
+  height: 100vh; /*Old browser support*/
   height: 100svh;
 }
 .home-wrapper {
@@ -99,15 +88,15 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #000;
   border-radius: 8px;
   background-color: var(--box-color);
 }
 h4.lato {
-  font-size: 28px;
   color: var(--main-font-color);
+  font-size: var(--font-size-2xl);
   letter-spacing: 3px;
   margin-top: 3%;
+  font-weight: normal;
 }
 .header-content {
   position: relative;
@@ -116,7 +105,7 @@ h4.lato {
 .header-content h4 {
   position: relative;
   line-height: 1.8em;
-  padding: 0.35em 1em;
+  padding: 0.1em 0.1em;
   margin-bottom: 30px;
 }
 .header-content h4::before {
@@ -125,13 +114,13 @@ h4.lato {
   top: 0;
   width: 0;
   height: 2px;
-  background-color: var(--main-font-color);
+  background-color: var(--boxborder-color);
   opacity: 0;
   left: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
   animation: fadeInLeft 1s ease forwards;
   animation-delay: 1.5s;
-  border-bottom: 2px solid var(--main-font-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 .header-content h4::after {
   content: '';
@@ -139,13 +128,13 @@ h4.lato {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: var(--main-font-color);
+  background-color: var(--boxborder-color);
   opacity: 0;
   right: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
   animation: fadeInRight 1s ease forwards;
   animation-delay: 1.5s;
-  border-bottom: 2px solid var(--main-font-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 @keyframes fadeInLeft {
   0% {
@@ -172,8 +161,8 @@ h4.lato {
   animation: fadeIn 1s ease-in-out forwards; 
   animation-delay: 3s;
   color: var(--main-font-color);
+  font-size: var(--font-size-xl);
   letter-spacing: 2px;
-  font-size: 20px;
   padding-bottom: 37px;
 }
 @keyframes fadeIn {
@@ -184,17 +173,12 @@ h4.lato {
     opacity: 1;
   }
 }
-@media (max-width: 768px){
-  .headersub {
-	letter-spacing: 1.5px;
-  }
-}
 .button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 0px;
+  bottom: 3px;
   width: 100%;
   text-align: center;
   margin-bottom: 8px;
@@ -203,10 +187,6 @@ h4.lato {
   animation-delay: 4s;
   transform: translateY(20px);
   flex-direction: column;
-}
-.darrow {
-  color: var(--main-font-color);
-  font-size: 35px;
 }
 @keyframes fadeInUp {
   0% {
@@ -218,11 +198,15 @@ h4.lato {
     transform: translateY(0);
   }
 }
+.darrow a {
+  font-size: var(--font-size-2xl);
+}
 .cleanlink {
 	text-decoration: none;
-	color: var(--main-font-color);
+	color: var(--secondary-color);
+	font-family: 'Georgia', serif;
+	font-size: var(--font-size-4xl);
 }
-
 
 /* First Section */
 .first-section {
@@ -266,21 +250,11 @@ h4.lato {
   filter: grayscale(0%);
   transform: scale(1.5);
 }
-.left-Tbutton,
-.right-Tbutton {
-  color: var(--main-font-color);
-  background: none;
-  outline: none;
-  appearance: none;
-}
-.right-Tbutton {
-  filter: grayscale(100%);
-}
 .boxes {
     box-shadow:
-      1px 2px 2px hsl(220deg 80% 1% / 0.2),
-      2px 4px 4px hsl(220deg 80% 1% / 0.2),
-      4px 8px 8px hsl(220deg 80% 2% / 0.2),
-      8px 16px 16px hsl(220deg 80% 3% / 0.2),
-      16px 32px 32px hsl(220deg 80% 4% / 0.2);
+      1px 2px 2px hsl(220deg 80% 4% / 0.2),
+      2px 4px 4px hsl(220deg 80% 5% / 0.2),
+      4px 8px 8px hsl(220deg 80% 6% / 0.2),
+      8px 16px 16px hsl(220deg 80% 7% / 0.2),
+      16px 32px 32px hsl(220deg 80% 8% / 0.2);
 }

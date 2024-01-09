@@ -1,7 +1,7 @@
 {
-  "Systemy": ["PsysSK1", "sysSK2", "sysSK3"],
-  "Sieci": ["PnetSK1", "netSK2", "netSK3", "netSK4", "netSK5"],
-  "Analiza": ["PanaSK1", "anaSK2"],
-  "Projekt": ["PdesSK1", "desSK2", "desSK3", "desSK4"],
-  "Inne": ["PassSK1"]
+  "Systemy & Sieci": ["HPe", "Dell", "Nimble", "Nutanix", "vCenter Esx", "Hyper-V", "Windows Server", "Linux Server", "Intune", "Fortinet", "Watchguard", "Cisco ASA", "Aruba", "Meraki", "Darktrace", "EDR"],
+  "Umiejętności miękkie": ["Umiejętności analityczne", "Krytyczne myślenie", "Wytrwałość", "Zorientowany na usługi", "Samomotywacja", "Praca z dokładnością", "Być zorganizowanym", "Współpraca"],
+  "Analiza & Skryptów": ["PowerShell", "Perl", "Python", "SQL", "Html/css", "Golang", "PowerBI", "Access", "Excel"],
+  "Inne": ["To", "nadchodzi"],
+  "Oprogramowania": ["Veeam", "Synology", "FSLogix", "BitTitan", "Wireshark", "Postman", "Burp suite", "Avaya", "Autotask", "N-Able", "ITGlue", "DbFact"]
 }

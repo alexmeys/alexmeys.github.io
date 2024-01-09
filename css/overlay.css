@@ -27,11 +27,9 @@
 .overlay-theme {
   margin: 2%;
 }
-.overlay-me {
-  font-size: 23px;
-}
-.overlay-me a:hover{
-  color: var(--secondary-color);
+.overlay-me a {
+  font-size: var(--font-size-xl);
+  color: var(--main-font-color);
 }
 .overlay-menu.active {
   display: block;

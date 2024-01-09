@@ -1,24 +1,25 @@
 .contact-wrapper {
   width: 77%;
   height: 77%;
-  margin-top: 5%;
+  margin: 1% 0px;
   padding: 1.5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #000;
   border-radius: 8px;
   background-color: var(--box-color);
 }
 .quotes {
-  font-family: 'Georgia', serif;
-  font-style: italic;
-  color: var(--main-font-color);
-  font-size: 23px;
   animation: fadeInStuff 1.2s ease-in-out forwards;
 }
-
+.quotes p {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: var(--font-size-xl);
+  color: var(--main-font-color);
+  text-align: center;
+}
 /* social menu */
 .mnu-soc ul {
   list-style-type: none;

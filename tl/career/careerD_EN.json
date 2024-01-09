@@ -1,23 +1,37 @@
 [
   {
-    "Function": "Func 1 US",
-    "datestart": "January 2022",
-    "dateend": "present",
-    "CompanyName": "ABC Company",
-    "Story": "Start -end"
+    "Function": "TBD",
+    "datestart": "January 2024 ",
+    "dateend": "Current Position ",
+    "CompanyName": "Netflow IT ",
+    "Story": "TBD."
   },
   {
-    "Function": "Func 2 US",
-    "datestart": "January 2020",
-    "dateend": "December 2022",
-    "CompanyName": "ABC Company",
-    "Story": "the story is loonnngggg soo looong, i did a lot of stuff balblablablabl the story is loonnngggg soo looong, i did a lot of stuff balblablablabl the story is loonnngggg soo looong, i did a lot of stuff balblablablabl the story is loonnngggg soo looong, i did a lot of stuff balblablablabl the story is loonnngggg soo looong, i did a lot of stuff balblablablablthe story is loonnngggg soo looong, i did a lot of stuff balblablablabl the story is loonnngggg soo looong, i did a lot of stuff balblablablablthe story is loonnngggg soo looong, i did a lot of stuff balblablablabl vthe story is loonnngggg soo looong, i did a lot of stuff balblablablablthe story is loonnngggg soo looong, i did a lot of stuff balblablablabl  the story is loonnngggg soo looong, i did a lot of stuff balblablablabl"
+    "Function": "System Administrator",
+    "datestart": "June 2012 ",
+    "dateend": "May 2016 ",
+    "CompanyName": "Netflow IT ",
+    "Story": "The focus here is mainly on internal support for colleagues. Maintaining software and hardware. Troubleshooting and resolving in-depth technical problems. Configuring firewalls and routers. Managing Windows Server environments. Managing network environments. Creating scripts for automation or recurring  issues. Performance monitoring and tweaking on everything related to network and Windows server infrastructure. Backup management. Maintaining technical documentation and platforms for management."
+  },
+  {
+    "Function": "Senior System Engineer",
+    "datestart": "July 2020 ",
+    "dateend": "Current Position ",
+    "CompanyName": "Netflow IT ",
+    "Story": "This role is a continuation of the previous one, but with a focus on Enterprise clients. Within the company, designated as a coordinator for the Network Experts team. Technical in-depth network and system troubleshooting. Installing and configuring firewalls. Manage Intune environments. Maintaining server and network infrastructure. Implementing security-related adjustments. Supporting colleagues. Working with other departments to develop proposals for new implementations. Drafting documentation and procedures."
   },
   {
     "Function": "PC Repair & Servicedesk",
-    "datestart": "January 2018",
-    "dateend": "December 2020",
-    "CompanyName": "ABC Company",
-    "Story": "the story is loonnngggg soo looong, i did a lot of stuff balblablablabl"
+    "datestart": "June 2010 ",
+    "dateend": "June 2012 ",
+    "CompanyName": "Netflow IT ",
+    "Story": "The initial experiences in the IT world. First-line servicedesk support. Repairs of various hardware. Proactively updating, maintaining software an documentation."
+  },
+  {
+    "Function": "System Engineer",
+    "datestart": "June 2016 ",
+    "dateend": "July 2020 ",
+    "CompanyName": "Netflow IT ",
+    "Story": "Onsite implementation of equipment or services (printers, firewalls, servers,...) in the BeNeLux and France, the SME world. Carrying out IT maintenance on-site at customers' premises. In case of technical urgent intervention from escalations perfom onsite repairs. Due to the trend of Onprem to Cloud, migrations to the cloud, with a focus on Microsoft 365."
   }
 ]
