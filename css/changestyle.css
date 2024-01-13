@@ -1,0 +1,70 @@
+:root {
+  --main-bg-color: #4D535E; 
+  --main-font-color: #F0F0F0;
+  --secondary-color: #FF5A09;
+  --box-color: #022130;
+  --overlay-color: rgba(77, 83, 94, 0.995); /*#4D535E;*/
+}
+.light-theme {
+  --main-bg-color: #D3D3D3;
+  --main-font-color: #2E2E2E;
+  --secondary-color: #00AC7C;
+  --box-color: #F0F0F0;
+  --overlay-color: rgba(211, 211, 211, 0.995); /*#D3D3D3;*/
+}
+.dark-theme {
+  --main-bg-color: #2E2E2E;
+  --main-font-color: #F0F0F0;
+  --secondary-color: #00AC7C;
+  --box-color: #383838;
+  --overlay-color: rgba(46, 46, 46, 0.995); /*#2E2E2E;*/
+}
+.blue-theme {
+  --main-bg-color: #4D535E;
+  --main-font-color: #F0F0F0;
+  --secondary-color: #FF7b00; 
+  --box-color: #000438;
+  --overlay-color: rgba(77, 83, 94, 0.995); /*#4D535E;*/
+}
+.fun-theme {
+  --main-bg-color: #4D535E;
+  --main-font-color: #F0F0F0;
+  --secondary-color: #FF5A09; 
+  --box-color: #022130;
+  --overlay-color: rgba(77, 83, 94, 0.995); /*#4D535E;*/
+}
+
+html {
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.438rem;
+  --font-size-2xl: 1.875rem;
+  --font-size-4xl: 4.375rem;
+}
+
+/* font styles */
+@font-face{
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.ttf') format('truetype'),
+       url('../fonts/Lato-Italic.ttf') format('truetype');
+}
+
+/* Theme specific buttons in html */
+.B-Tbutton,
+.F-Tbutton,
+.D-Tbutton,
+.L-Tbutton {
+  color: var(--main-font-color);
+  background: none;
+  outline: none;
+  appearance: none;
+}
+.D-Tbutton {
+  filter: grayscale(100%);
+}
+.B-Tbutton {
+  filter: hue-rotate(180deg);
+}
+.L-Tbutton {
+  filter: saturate(0%) brightness(200%);
+}
