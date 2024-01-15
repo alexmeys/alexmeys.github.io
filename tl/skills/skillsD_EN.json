@@ -1,7 +1,7 @@
 {
-  "System & Network": ["HPe", "Dell", "Nimble", "Nutanix", "vCenter Esx", "Hyper-V", "Windows Server", "Microsoft Exchange", "Office 365", "Linux Server", "Intune", "Fortinet", "Watchguard", "Cisco ASA", "Aruba", "Meraki", "Darktrace", "EDR"], 
+  "System & Network": ["HPe", "Dell", "Nimble", "Nutanix", "vCenter Esx", "Hyper-V", "Windows Server", "RDS", "FSLogix", "Veeam", "Synology", "Microsoft Exchange", "Office 365", "Linux Server", "Intune", "Fortinet", "Watchguard", "Cisco ASA", "Aruba", "Meraki", "Darktrace", "Avaya", "EDR"], 
   "Scripting & Analysing": ["PowerShell", "Perl", "Python", "SQL", "Html/css", "Golang", "PowerBI", "Access", "Excel"],
-  "Software": ["Wireshark", "Veeam", "Synology", "FSLogix", "BitTitan", "Postman", "Burp suite", "Nessus", "LibreNMS", "Avaya", "Autotask", "N-Able", "ITGlue", "DbFact"],
+  "Software": ["Wireshark", "BitTitan", "Postman", "Burp suite", "Nessus", "LibreNMS", "Autotask", "N-Able", "ITGlue", "DbFact"],
   "Soft Skills": ["Analytical Reasoning",  "Problem Solving", "Critical thinking", "Perseverance", "Service-oriented", "Self-motivation", "Working accurately", "Being Organised", "Teamwork"],
   "Assorted": ["To", "come"]
 }
