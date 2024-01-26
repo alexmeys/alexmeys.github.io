@@ -1,30 +1,9 @@
 [
   {
-    "Function": "Senior System Engineer",
-    "datestart": "July 2020 ",
-    "dateend": "Current Position ",
-    "CompanyName": "Netflow IT ",
-    "Story": "This role is a continuation of the previous one, but with a focus on Enterprise clients. Responsible for both coordination and technical work within the network team. Technical in-depth network and system troubleshooting. Installing and configuring network equipment. Manage Intune environments. Maintaining server and network infrastructure. Implementing security-related adjustments in IT as in OT. Supplying internal support for colleagues. Working with other departments to develop proposals for new implementations. Drafting documentation and procedures with a focus on networking. Together with the team, I seek possible solutions for specific and challenging problems. Coordination of team efforts, communication, and alignment with colleagues inside and outside the team. Knowledge transfer within (and outside) the team."
-  },
-  {
-    "Function": "System Engineer",
-    "datestart": "June 2016 ",
-    "dateend": "July 2020 ",
-    "CompanyName": "Netflow IT ",
-    "Story": "Onsite implementation of IT equipment or services in the BeNeLux and France, the SME world. Carrying out IT maintenance on-site at customers' premises. In case of technical urgent intervention from escalations perfom onsite repairs. Due to the trend of Onprem to Cloud, migrations to the Cloud, with a focus on Microsoft 365 stack. Integration VoiP solutions. Supplying internal support for colleagues. Combining this role with system- and network administration."
-  },
-  {
-    "Function": "System Administrator",
-    "datestart": "June 2012 ",
-    "dateend": "May 2016 ",
-    "CompanyName": "Netflow IT ",
-    "Story": "Maintaining software and hardware. Troubleshooting and resolving in-depth technical problems. Configuring firewalls and routers. Managing Windows Server environments. Managing network environments. Creating scripts for automation or recurring  issues. Performance monitoring and tweaking on everything related to network and Windows server infrastructure. Backup management. Maintaining technical documentation and platforms for management. Integration of Avaya IP Office."
-  },
-  {
-    "Function": "PC Repair & Servicedesk",
+    "Function": "IT System Engineer",
     "datestart": "June 2010 ",
-    "dateend": "June 2012 ",
-    "CompanyName": "Netflow IT ",
-    "Story": "The initial experiences in the IT world. First-line servicedesk support. Repairs of various hardware. Proactively updating, maintaining software an documentation."
+    "dateend": "Current Position",
+    "CompanyName": "Netflow IT",
+    "Story": "Responsible for both coordination and technical work within the network team. Drafting documentation and procedures with a focus on networking. Onsite implementation of IT equipment or services in the BeNeLux and France, the SME and Enterprise world. Design, development of IT as OT environments. Setting up, adjusting and maintaining network equipment (Firewalls, switches,...). Implementing security-related adjustments in IT as in OT. Integration VoiP solutions. Carrying out IT maintenance on-site at customers' premises. Troubleshooting and resolving in-depth technical problems. Technical urgent intervention from escalations perfom onsite repairs. Migrations to the Cloud, with a focus on Microsoft 365 stack. Managing Intune environments. Managing Server environments (Windows, Linux). Managing network environments (Layer 1-7). Creating scripts for automation or recurring issues. Performance monitoring and tweaking on everything related to network and server infrastructure. Integration of Avaya IP Office. Internal support for colleagues. Servicedesk support for 1st, 2nd, and 3rd line. Backup and monitorring management. Repairs of various hardware. Proactively updating, maintaining software, hardware an documentation."
   }
 ]

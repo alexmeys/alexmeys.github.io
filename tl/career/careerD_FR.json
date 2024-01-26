@@ -1,30 +1,9 @@
 [
   {
-    "Function": "Ingénieur Système Senior",
-    "datestart": "Juillet 2020 ",
-    "dateend": "Poste actuel ",
-    "CompanyName": "Netflow IT ",
-    "Story": "Ce rôle est une continuation du précédent, mais avec un focus sur les clients Entreprise. chargé à la fois de coordonner et de réaliser des tâches techniques au sein de l'équipe réseau. Dépannage technique approfondi des réseaux et systèmes. Installation et configuration d'équipements réseau. Gestion des environnements Intune. Maintenance de l'infrastructure serveur et réseau. Mise en œuvre des ajustements liés à la sécurité en IT comme en OT. Le support interne pour les collègues. Collaboration avec d'autres départements pour élaborer des propositions de nouvelles mises en œuvre. Rédiger des documents et des procédures. Avec l'équipe, je recherche des solutions possibles pour des problèmes spécifiques et complexes. Coordination des efforts de l'équipe, communication et alignement avec les collègues. Transfert de connaissances au sein (et à l'extérieur) de l'équipe."
-  },
-  {
-    "Function": "Ingénieur Système",
-    "datestart": "Juin 2016 ",
-    "dateend": "Juillet 2020 ",
-    "CompanyName": "Netflow IT ",
-    "Story": "Mise en place sur site d'équipements ou de services informatiques au BeNeLux et en France, pour les PME. Réaliser la maintenance informatique sur site chez les clients. En cas d'intervention technique urgente, effectuer des réparations sur site. En raison de la tendance d'Onprem vers le Cloud, les migrations vers le cloud, avec un accent sur Microsoft 365. Intégration des solutions VoiP. Le support interne pour les collègues. Combinaison de ce rôle avec l'administration de systèmes et de réseaux."
-  },
-  {
-    "Function": "Administrateur Système",
-    "datestart": "Juin 2012 ",
-    "dateend": "Mai 2016 ",
-    "CompanyName": "Netflow IT ",
-    "Story": "Maintien des logiciels et du matériel. Dépannage et résolution de problèmes techniques approfondis. Configuration des pare-feu et routeurs. Gestion des environnements Windows Server. Gestion des environnements réseau. Création de scripts pour l'automatisation ou les problèmes récurrents. Surveillance des performances et ajustements sur tout ce qui concerne l'infrastructure réseau et les serveurs Windows. Gestion des sauvegardes. Maintenir la documentation technique et les plateformes de gestion. Le support interne pour les collègues. Intégration d'Avaya IP Office."
-  },
-  {
-    "Function": "Réparation PC & Service d'assistance",
-    "datestart": "Juin 2010 ",
-    "dateend": "Juin 2012 ",
-    "CompanyName": "Netflow IT ",
-    "Story": "Les premières expériences dans le monde de l'informatique. Support technique de première ligne. Réparations de matériel divers. Mise à jour proactive, maintenance des logiciels et de la documentation."
+    "Function": "Ingénieur système IT",
+    "datestart": "Juin 2010",
+    "dateend": "Poste actuel",
+    "CompanyName": "Netflow IT",
+    "Story": "Chargé à la fois de coordonner et de réaliser des tâches techniques au sein de l'équipe réseau. Développer et documenter les normes qui seront mises en œuvre en mettant l'accent sur la mise en réseau. Mise en place sur site d'équipements ou de services informatiques au BeNeLux et en France, pour les PME et pour les entreprises. Conception, développement d'environnements IT comme OT. Mise en place, réglage et maintenance des équipements réseaux (pare-feu, commutateurs,...). Mise en œuvre des ajustements liés à la sécurité en IT comme en OT. Intégration des solutions VoiP. Maintenir l'environnement informatique sur les sites des clients. Dépannage et résolution de problèmes techniques approfondis. D'intervention technique urgente, effectuer des réparations sur site. Migrations vers le 'cloud' depuis OnPrem, avec un accent sur Microsoft 365. Gestion des environnements Intune. Gestion des environnements système (Windows, Linux). Gestion des environnements réseau (Couche 1 à 7). Création de scripts pour l'automatisation ou les problèmes récurrents. Surveillance des performances et ajustements sur tout ce qui concerne l'infrastructure réseau et les serveurs. Intégration d'Avaya IP Office. Le support interne pour les collègues. Support technique de 1ère, 2e et 3e ligne. Gestion de la sauvegarde et de la surveillance. Réparations de matériel divers. Mise à jour proactive, maintenance des logiciels, le matériel et de la documentation."
   }
 ]
