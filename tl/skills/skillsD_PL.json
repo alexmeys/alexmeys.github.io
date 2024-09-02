@@ -1,0 +1,6 @@
+{
+  "Systemy & Sieci": ["HPe", "Dell", "Nimble", "Nutanix", "vCenter Esx", "Hyper-V", "Windows Server", "RDS", "FSLogix", "Veeam", "Synology", "Microsoft Exchange", "Office 365", "Linux Server", "Intune", "Fortinet", "Watchguard", "Cisco ASA", "Aruba", "OT", "OPC", "Meraki", "Mikrotik", "Darktrace", "Sentinel One", "Avaya", "EDR"],
+  "Skryptów & Analiza": ["PowerShell", "Perl", "Python", "SQL", "Html/css", "Golang", "PowerBI", "Access", "Excel"],
+  "Oprogramowania": ["Wireshark", "BitTitan", "Postman", "Burp suite", "Nessus", "LibreNMS", "Autotask", "N-Able", "ITGlue", "DbFact", "Tankmaster"],
+  "Umiejętności miękkie": ["Umiejętności analityczne", "Krytyczne myślenie", "Wytrwałość", "Zorientowany na usługi", "Samomotywacja", "Praca z dokładnością", "Być zorganizowanym", "Współpraca"]
+}

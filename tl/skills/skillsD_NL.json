@@ -1,0 +1,6 @@
+{
+  "Systeem & Netwerk": ["HPe", "Dell", "Nimble", "Nutanix", "vCenter Esx", "Hyper-V", "Windows Server", "RDS", "FSLogix", "Veeam", "Synology", "Microsoft Exchange", "Office 365", "Linux Server", "Intune", "Fortinet", "Watchguard", "Cisco ASA", "Aruba", "OT", "OPC", "Meraki", "Mikrotik", "Darktrace", "Sentinel One", "Avaya", "EDR"],  
+  "Scripting & Analyse": ["PowerShell", "Perl", "Python", "SQL", "Html/css", "Golang", "PowerBI", "Access", "Excel"],
+  "Software": ["Wireshark", "BitTitan", "Postman", "Burp suite", "Nessus", "LibreNMS", "Autotask", "N-Able", "ITGlue", "DbFact", "Tankmaster"],
+  "Persoonlijke vaardigheden": ["Analytisch vermogen", "Kritisch denken", "Volharding", "Servicegericht", "Zelfmotivatie", "Accuraat werken",  "Georganiseerd zijn", "Samenwerking"]
+}
