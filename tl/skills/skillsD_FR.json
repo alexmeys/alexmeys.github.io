@@ -1,0 +1,80 @@
+{
+  "Systèmes & Réseaux": [
+    "VMware",
+    "Hyper-V",
+    "Nutanix",
+    "Nimble",
+    "HPe",
+    "SAN",
+    "NAS",
+    "Windows Server",
+    "Linux Server",
+    "RDS"
+  ],
+  "Réseaux & Sécurité": [
+    "FortiGate",
+    "Meraki",
+    "Cisco",
+    "Aruba",
+    "WatchGuard",
+    "Ubiquiti",
+    "MikroTik",
+    "SD-WAN",
+    "VPN/IPsec",
+    "VLAN",
+    "Wi-Fi",
+    "EDR",
+    "SentinelOne",
+    "Defender",
+    "Darktrace",
+    "Gestion DNS",
+    "IIS",
+    "Certificats SSL"
+  ],
+  "Cloud, Microsoft & Sauvegarde": [
+    "Office 365",
+    "Exchange",
+    "SharePoint",
+    "Azure",
+    "Intune",
+    "Active Directory",
+    "Veeam"
+  ],
+  "Télécom & VoIP": [
+    "Avaya IP Office",
+    "3CX",
+    "Snom",
+    "Yealink",
+    "Microsoft Teams"
+  ],
+  "Scripting & Analyse": [
+    "PowerShell",
+    "Python",
+    "Perl",
+    "HTML/CSS",
+    "SQL",
+    "Access",
+    "Excel",
+    "PowerBI",
+    "PowerAutomate"
+  ],
+  "Migrations, Outils & Gestion": [
+    "Intégration OT/IT",
+    "BitTitan",
+    "OPC",
+    "Wireshark",
+    "LibreNMS",
+    "Autotask",
+    "N-Able",
+    "ITGlue",
+    "DbFact"
+  ],
+  "Compétences comportementales": [
+    "Esprit analytique",
+    "Esprit critique",
+    "Orienté client",
+    "Travail d'équipe",
+    "Résolution de problèmes",
+    "Être organisé"
+  ]
+}

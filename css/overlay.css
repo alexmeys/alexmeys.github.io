@@ -1,0 +1,48 @@
+/* Overlay menu styles */
+.overlay-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-color);
+  z-index: 1000;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+.overlay-focus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.overlay-me,
+.overlay-theme {
+  margin: 2%;
+}
+.overlay-me a {
+  font-size: var(--font-size-xl);
+  color: var(--main-font-color);
+}
+.overlay-menu.active {
+  display: block;
+}
+.overlay-menu .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1200;
+}
+.overlay-menu.active .close-btn {
+  display: block;
+}

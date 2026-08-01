@@ -1,0 +1,80 @@
+{
+  "Infrastructure & Virtualization": [
+    "VMware",
+    "Hyper-V",
+    "Nutanix",
+    "Nimble",
+    "HPe",
+    "SAN",
+    "NAS",
+    "Windows Server",
+    "Linux Server",
+    "RDS"
+  ],
+  "Networks & Security": [
+    "FortiGate",
+    "Meraki",
+    "Cisco",
+    "Aruba",
+    "WatchGuard",
+    "Ubiquiti",
+    "MikroTik",
+    "SD-WAN",
+    "VPN/IPsec",
+    "VLAN",
+    "Wi-Fi",
+    "EDR",
+    "SentinelOne",
+    "Defender",
+    "Darktrace",
+    "DNS Management",
+    "IIS",
+    "SSL Certificates"
+  ],
+  "Cloud, Microsoft & Backup": [
+    "Office 365",
+    "Exchange",
+    "SharePoint",
+    "Azure",
+    "Intune",
+    "Active Directory",
+    "Veeam"
+  ],
+  "Telecom & VoIP": [
+    "Avaya IP Office",
+    "3CX",
+    "Snom",
+    "Yealink",
+    "Microsoft Teams"
+  ],
+  "Scripting & Analytics": [
+    "PowerShell",
+    "Python",
+    "Perl",
+    "HTML/CSS",
+    "SQL",
+    "Access",
+    "Excel",
+    "PowerBI",
+    "PowerAutomate"
+  ],
+  "Migrations, Tooling & Management": [
+    "OT/IT Integration",
+    "BitTitan",
+    "OPC",
+    "Wireshark",
+    "LibreNMS",
+    "Autotask",
+    "N-Able",
+    "ITGlue",
+    "DbFact"
+  ],
+  "Soft Skills": [
+    "Analytical Skills",
+    "Critical Thinking",
+    "Client-Oriented",
+    "Teamwork",
+    "Problem Solving",
+    "Organized"
+  ]
+}

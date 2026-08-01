@@ -1,0 +1,80 @@
+{
+  "Infrastructuur & Virtualisatie": [
+    "VMware",
+    "Hyper-V",
+    "Nutanix",
+    "Nimble",
+    "HPe",
+    "SAN",
+    "NAS",
+    "Windows Server",
+    "Linux Server",
+    "RDS"
+  ],
+  "Netwerken & Beveiliging": [
+    "FortiGate",
+    "Meraki",
+    "Cisco",
+    "Aruba",
+    "WatchGuard",
+    "Ubiquiti",
+    "MikroTik",
+    "SD-WAN",
+    "VPN/IPsec",
+    "VLAN",
+    "Wi-Fi",
+    "EDR",
+    "SentinelOne",
+    "Defender",
+    "Darktrace",
+    "DNS-beheer",
+    "IIS",
+    "SSL-Certificaten"
+  ],
+  "Cloud, Microsoft & Backup": [
+    "Office 365",
+    "Exchange",
+    "SharePoint",
+    "Azure",
+    "Intune",
+    "Active Directory",
+    "Veeam"
+  ],
+  "Telecom & VoIP": [
+    "Avaya IP Office",
+    "3CX",
+    "Snom",
+    "Yealink",
+    "Microsoft Teams"
+  ],
+  "Scripting & Analyse": [
+    "PowerShell",
+    "Python",
+    "Perl",
+    "HTML/CSS",
+    "SQL",
+    "Access",
+    "Excel",
+    "PowerBI",
+    "PowerAutomate"
+  ],
+  "Migraties, Tooling & Beheer": [
+    "OT/IT-Integratie",
+    "BitTitan",
+    "OPC",
+    "Wireshark",
+    "LibreNMS",
+    "Autotask",
+    "N-Able",
+    "ITGlue",
+    "DbFact"
+  ],
+  "Persoonlijke vaardigheden": [
+    "Analytisch vermogen",
+    "Kritisch denken",
+    "Klantgericht",
+    "Samenwerking",
+    "Probleemoplossend",
+    "Georganiseerd zijn"
+  ]
+}
